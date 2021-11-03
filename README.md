@@ -11,7 +11,6 @@ For parsing Gff file
 - **Arguments**
 
 ::
-
     usage: annogesic create --project_path PROJECT_PATH
     
     optional arguments:
