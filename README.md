@@ -8,9 +8,6 @@ The scripts are the following:
 
 For parsing Gff file
 
-Arguments
--------------
-
 ::
 
     usage: annogesic [-h] [--version]
