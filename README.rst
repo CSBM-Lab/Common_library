@@ -21,3 +21,12 @@ For parsing Gff file
     optional arguments:
       -h, --help            show this help message and exit
       --version, -v         show version
+
+Converter_Complement.py
+^^^^^^^^^^^^^^^^^^^^^^^
+
+For converting a DNA strand into the complement strand
+
+::
+
+    usage: complement(strand)
