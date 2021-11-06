@@ -11,7 +11,7 @@ Converter.py
 Converter for gene sequence
 
 complement
-----------
+
 ::
 
     ######Usage
@@ -24,7 +24,7 @@ complement
     Johnathan Lin
 
 transcription
--------------
+
 ::
 
     ######Usage
