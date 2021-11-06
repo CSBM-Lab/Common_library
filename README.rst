@@ -24,7 +24,7 @@ complement
     Johnathan Lin
 
 transcription
-=============
+-------------
 ::
 
     ######Usage
