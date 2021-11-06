@@ -12,7 +12,7 @@ Converter for gene sequence
 
 ::
     complement
-    ----------
+    **********
     ######Usage
     **complement(strand)**
 
