@@ -10,6 +10,7 @@ Converter.py
 
 Converter for gene sequence
 
+## complement
 ::
 
     ######Usage
@@ -22,6 +23,7 @@ Converter for gene sequence
     Johnathan Lin
 
 ::
+## transcription
 
     ######Usage
     **transcription(strand)**
