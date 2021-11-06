@@ -6,14 +6,13 @@ Please name the script based on the main goal of the code, and also remember to 
 The scripts are the following:
 
 Converter.py
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 Converter for gene sequence
 
-complement
-
 ::
-
+complement
+----------
     ######Usage
     **complement(strand)**
 
@@ -23,10 +22,9 @@ complement
     ######Author(s)
     Johnathan Lin
 
-transcription
-
 ::
-
+transcription
+-------------
     ######Usage
     **transcription(strand)**
 
