@@ -7,32 +7,26 @@ The scripts are the following:
 
 Converter.py
 ^^^^^^^^^^^^
-
 Converter for gene sequence
 
+**complement**
 ::
-    complement
+    - Usage:   
+        complement(strand)
 
-    Usage
-    **complement(strand)**
+    - Arguments:    
+        strand    the original strand. Type: integer
 
-    Arguments
-    **strand**    the original strand. _Type:integer_
-
-    Author(s)
-    Johnathan Lin
-
+**transcription**
 ::
-    transcription
+    - Usage:
+        transcription(strand)
 
-    Usage
-    **transcription(strand)**
+    - Arguments:
+        strand    the original strand. Type: integer
 
-    Arguments
-    **strand**    the original strand. _Type:integer_
-
-    Author(s)
-    Johnathan Lin
+**Author(s)**
+Johnathan Lin
 
 
 
