@@ -13,25 +13,25 @@ Converter for gene sequence
 ::
     complement
 
-    ######Usage
+    Usage
     **complement(strand)**
 
-    ######Arguments
+    Arguments
     **strand**    the original strand. _Type:integer_
 
-    ######Author(s)
+    Author(s)
     Johnathan Lin
 
 ::
     transcription
 
-    ######Usage
+    Usage
     **transcription(strand)**
 
-    ######Arguments
+    Arguments
     **strand**    the original strand. _Type:integer_
 
-    ######Author(s)
+    Author(s)
     Johnathan Lin
 
 
