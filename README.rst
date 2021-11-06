@@ -11,8 +11,8 @@ Converter.py
 Converter for gene sequence
 
 ::
-complement
-----------
+    complement
+    ----------
     ######Usage
     **complement(strand)**
 
@@ -23,8 +23,8 @@ complement
     Johnathan Lin
 
 ::
-transcription
--------------
+    transcription
+
     ######Usage
     **transcription(strand)**
 
