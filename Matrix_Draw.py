@@ -21,8 +21,10 @@ def DF_Reduce(x):
     return df_filtered
 
 # Read Matrix text file into pandas DataFrame
-df = pd.read_csv('Matrix_Cluster_204.txt', sep='\t')
-df_all = pd.read_csv('Matrix_All.txt', sep='\t')
+M_name = 'Matrix_Cluster_204.txt'
+MA_name = 'Matrix_All.txt'
+df = pd.read_csv(M_name, sep='\t')
+df_all = pd.read_csv(MA_name, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
 Cat_input = 'GOMF name' ### Decide which Category to use
@@ -43,8 +45,10 @@ df_all_reduced = df_all[Cat_input][1:]
 #df['Category value'].to_csv('df_GOBP.txt', index=False, sep='\t')
 #df_all_reduced.to_csv('df_all_GOBP.txt', index=False, sep='\t')
 
+'''Read through each row, and compare the last 3 items
+create a list of matched numbers of rows
+'''
 Match = [] # Create a list of matched row numbers (first row is 0)
-'''Read through each row, make a list and compare the last 3 items'''
 def Comp_df_full():
     global Match
     for i in df_all_reduced:
