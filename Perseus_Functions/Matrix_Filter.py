@@ -16,13 +16,13 @@ def DF_Reduce(x):
     return df_filtered
 
 # Read Matrix text file into pandas DataFrame
-M_file = 'Matrix_GO_404.txt'
+M_file = 'Matrix_404.txt'
 MA_file = 'Matrix_All.txt'
 df = pd.read_csv(M_file, sep='\t')
 df_all = pd.read_csv(MA_file, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
-Cat_input = 'KEGG' ### Decide which Category to use
+Cat_input = 'GOMF' ### Decide which Category to use
 df = DF_Reduce(Cat_input)
 
 # Add a 'Gene Ratio'(Intersection size / Category size) column. !!!First row will be empty (NaN)!!!
@@ -38,7 +38,7 @@ df_all_reduced = df_all[Cat_input][1:]
 df_all_reduced.dropna(inplace=True) # Drop the rows with (NaN)
 
 ## Create 2 txt files to compare
-df.to_csv('df_KEGG.txt', index=False, sep='\t')
+df['Category value'].to_csv('df_GOMF.txt', index=False, sep='\t')
 #df_all_reduced.to_csv('df_all_GOMF.txt', index=False, sep='\t')
 
 '''Read through each row, and compare the last 3 items
