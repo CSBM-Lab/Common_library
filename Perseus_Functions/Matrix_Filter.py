@@ -16,13 +16,13 @@ def DF_Reduce(x):
     return df_filtered
 
 # Read Matrix text file into pandas DataFrame
-M_file = 'Matrix_Cluster_204.txt'
+M_file = 'Matrix_GO_404.txt'
 MA_file = 'Matrix_All.txt'
 df = pd.read_csv(M_file, sep='\t')
 df_all = pd.read_csv(MA_file, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
-Cat_input = 'GOMF name' ### Decide which Category to use
+Cat_input = 'KEGG' ### Decide which Category to use
 df = DF_Reduce(Cat_input)
 
 # Add a 'Gene Ratio'(Intersection size / Category size) column. !!!First row will be empty (NaN)!!!
@@ -38,39 +38,39 @@ df_all_reduced = df_all[Cat_input][1:]
 df_all_reduced.dropna(inplace=True) # Drop the rows with (NaN)
 
 ## Create 2 txt files to compare
-#df['Category value'].to_csv('df_GOBP.txt', index=False, sep='\t')
+df.to_csv('df_KEGG.txt', index=False, sep='\t')
 #df_all_reduced.to_csv('df_all_GOMF.txt', index=False, sep='\t')
 
 '''Read through each row, and compare the last 3 items
 create a list of matched numbers of rows
 '''
-Match = [] # Create a list of matched row numbers (first row is 0)
-def Comp_df_full():
-    global Match
-    for i in df_all_reduced: 
-        Temp = [] # Create a list and put each row of selected 'Cat_input' in
-        Temp = i.split(';')
-        for i, v in enumerate(df['Category value']): # i=index, v=value in this for loop, for each row of v, compare it to the list 'Temp'
-            if len(Temp) >= 3: # if the list 'Temp' has at least 3 items, compare v to the last 3
-                if v.casefold() == Temp[-1] or v.casefold() == Temp[-2] or v.casefold() == Temp[-3]:
-                    Match.append(i)
-                else:
-                    continue
-            elif len(Temp) >= 2:# if the list 'Temp' has at least 2 items, compare v to the last 2
-                if v.casefold() == Temp[-1] or v.casefold() == Temp[-2]:
-                    Match.append(i)
-                else:
-                    continue
-            elif len(Temp) >= 1:# if the list 'Temp' has at least 1 items, compare v to the last 1
-                if v.casefold() == Temp[-1]:
-                    Match.append(i)
-                else:
-                    continue
-            else:
-                continue
-    Match = sorted(set(Match))
-
-Comp_df_full()
-print(Match)
-'''This is the Matched DataFrame for plot drawing'''
-df = df.iloc[Match]
+#Match = [] # Create a list of matched row numbers (first row is 0)
+#def Comp_df_full():
+#    global Match
+#    for i in df_all_reduced: 
+#        Temp = [] # Create a list and put each row of selected 'Cat_input' in
+#        Temp = i.split(';')
+#        for i, v in enumerate(df['Category value']): # i=index, v=value in this for loop, for each row of v, compare it to the list 'Temp'
+#            if len(Temp) >= 3: # if the list 'Temp' has at least 3 items, compare v to the last 3
+#                if v.casefold() == Temp[-1] or v.casefold() == Temp[-2] or v.casefold() == Temp[-3]:
+#                    Match.append(i)
+#                else:
+#                    continue
+#            elif len(Temp) >= 2:# if the list 'Temp' has at least 2 items, compare v to the last 2
+#                if v.casefold() == Temp[-1] or v.casefold() == Temp[-2]:
+#                    Match.append(i)
+#                else:
+#                    continue
+#            elif len(Temp) >= 1:# if the list 'Temp' has at least 1 items, compare v to the last 1
+#                if v.casefold() == Temp[-1]:
+#                    Match.append(i)
+#                else:
+#                    continue
+#            else:
+#                continue
+#    Match = sorted(set(Match))
+#
+#Comp_df_full()
+#print(Match)
+#'''This is the Matched DataFrame for plot drawing'''
+#df = df.iloc[Match]

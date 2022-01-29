@@ -21,13 +21,13 @@ def DF_Reduce(x):
     return df_filtered
 
 # Read Matrix text file into pandas DataFrame
-M_name = 'Matrix_Cluster_204.txt'
+M_name = 'Matrix_162.txt'
 MA_name = 'Matrix_All.txt'
 df = pd.read_csv(M_name, sep='\t')
 df_all = pd.read_csv(MA_name, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
-Cat_input = 'GOMF name' ### Decide which Category to use
+Cat_input = 'GOBP' ### Decide which Category to use
 df = DF_Reduce(Cat_input)
 
 # Add a 'Gene Ratio'(Intersection size / Category size) column. !!!First row will be empty (NaN)!!!
@@ -77,10 +77,10 @@ def Comp_df_full():
             continue
     Match = sorted(set(Match))
 
-Comp_df_full()
+#Comp_df_full()
 
 '''This is the Matched DataFrame for plot drawing'''
-df = df.iloc[Match]
+#df = df.iloc[Match]
 
 '''Let's begin to draw the plot'''
 # Plot parameters from user
@@ -165,7 +165,7 @@ for pos in ['right', 'top', 'bottom', 'left']:
 
 
 # plt.tight_layout()
-plt.savefig('Matched_GO.png',bbox_inches='tight')
+plt.savefig('DotPlot_GO.png',bbox_inches='tight')
 #plt.show()
 
 ### Output filtered data

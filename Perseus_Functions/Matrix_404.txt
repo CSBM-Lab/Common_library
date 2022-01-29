@@ -1,0 +1,406 @@
+Selection column	Selection value	Category column	Category value	Total size	Selection size	Category size	Intersection size	Enrichment factor	P value	Benj. Hoch. FDR
+#!{Type}C	C	C	C	N	N	N	N	N	N	N
+Cluster	Cluster -810	GOBP name	neutral amino acid transport	3278	364	4	4	9.0055	0.00014982	0.018016
+Cluster	Cluster -810	GOCC name	MCM complex	3278	364	6	6	9.0055	1.807E-06	0.00014726
+Cluster	Cluster -810	GOCC	GO:0042555	3278	364	6	6	9.0055	1.807E-06	0.00014726
+Cluster	Cluster -810	GOBP	GO:0015804	3278	364	4	4	9.0055	0.00014982	0.018016
+Cluster	Cluster -810	GOMF name	sodium ion transmembrane transporter activity	3278	364	8	6	6.7541	4.0128E-05	0.014346
+Cluster	Cluster -810	GOMF	GO:0015081	3278	364	8	6	6.7541	4.0128E-05	0.014346
+Cluster	Cluster -810	GOCC name	cytosolic small ribosomal subunit	3278	364	34	22	5.8271	8.1281E-14	2.0828E-11
+Cluster	Cluster -810	GOCC	GO:0022627	3278	364	34	22	5.8271	8.1281E-14	2.0828E-11
+Cluster	Cluster -810	GOCC name	eukaryotic 48S preinitiation complex	3278	364	14	9	5.7892	2.646E-06	0.00018081
+Cluster	Cluster -810	GOCC	GO:0033290	3278	364	14	9	5.7892	2.646E-06	0.00018081
+Cluster	Cluster -808	GOCC name	mitochondrial proton-transporting ATP synthase complex	3278	448	12	9	5.4877	2.2139E-06	0.0001565
+Cluster	Cluster -808	GOBP name	mitochondrial ATP synthesis coupled proton transport	3278	448	12	9	5.4877	2.2139E-06	0.00046298
+Cluster	Cluster -808	GOBP	GO:0042776	3278	448	12	9	5.4877	2.2139E-06	0.00046298
+Cluster	Cluster -808	GOCC	GO:0045259	3278	448	12	9	5.4877	2.2139E-06	0.0001565
+Cluster	Cluster -808	GOCC	GO:0005753	3278	448	12	9	5.4877	2.2139E-06	0.0001565
+Cluster	Cluster -808	GOCC name	proton-transporting ATP synthase complex	3278	448	12	9	5.4877	2.2139E-06	0.0001565
+Cluster	Cluster -810	KEGG name	Ribosome	3278	364	79	48	5.4717	2.9858E-27	1.5108E-24
+Cluster	Cluster -810	KEGG	ko03010	3278	364	79	48	5.4717	2.9858E-27	1.5108E-24
+Cluster	Cluster -810	GOCC name	translation preinitiation complex	3278	364	15	9	5.4033	5.8955E-06	0.00035547
+Cluster	Cluster -810	GOCC	GO:0070993	3278	364	15	9	5.4033	5.8955E-06	0.00035547
+Cluster	Cluster -810	GOCC	GO:0022625	3278	364	44	26	5.3214	9.5761E-15	2.8044E-12
+Cluster	Cluster -810	GOCC name	cytosolic large ribosomal subunit	3278	364	44	26	5.3214	9.5761E-15	2.8044E-12
+Cluster	Cluster -810	GOCC name	eukaryotic 43S preinitiation complex	3278	364	14	8	5.146	3.2432E-05	0.0016621
+Cluster	Cluster -810	GOCC	GO:0016282	3278	364	14	8	5.146	3.2432E-05	0.0016621
+Cluster	Cluster -810	GOCC	GO:0005852	3278	364	14	8	5.146	3.2432E-05	0.0016621
+Cluster	Cluster -810	GOCC name	eukaryotic translation initiation factor 3 complex	3278	364	14	8	5.146	3.2432E-05	0.0016621
+Cluster	Cluster -810	GOBP name	nuclear-transcribed mRNA catabolic process, nonsense-mediated decay	3278	364	96	52	4.878	3.8674E-26	5.5807E-22
+Cluster	Cluster -810	GOBP	GO:0000184	3278	364	96	52	4.878	3.8674E-26	5.5807E-22
+Cluster	Cluster -810	GOBP	GO:0001731	3278	364	15	8	4.8029	6.1917E-05	0.0085092
+Cluster	Cluster -810	GOBP name	formation of translation preinitiation complex	3278	364	15	8	4.8029	6.1917E-05	0.0085092
+Cluster	Cluster -808	GOBP	GO:0015985	3278	448	14	9	4.7038	1.5093E-05	0.0023934
+Cluster	Cluster -808	GOBP	GO:0015986	3278	448	14	9	4.7038	1.5093E-05	0.0023934
+Cluster	Cluster -808	GOBP name	energy coupled proton transport, down electrochemical gradient	3278	448	14	9	4.7038	1.5093E-05	0.0023934
+Cluster	Cluster -808	GOBP name	ATP synthesis coupled proton transport	3278	448	14	9	4.7038	1.5093E-05	0.0023934
+Cluster	Cluster -808	GOCC name	signalosome	3278	448	11	7	4.6562	0.00015806	0.0063245
+Cluster	Cluster -808	GOCC	GO:0008180	3278	448	11	7	4.6562	0.00015806	0.0063245
+Cluster	Cluster -808	KEGG	ko00720	3278	448	11	7	4.6562	0.00015806	0.015996
+Cluster	Cluster -808	KEGG name	Carbon fixation pathways in prokaryotes	3278	448	11	7	4.6562	0.00015806	0.015996
+Cluster	Cluster -810	GOBP name	SRP-dependent cotranslational protein targeting to membrane	3278	364	96	49	4.5966	4.0207E-23	1.4505E-19
+Cluster	Cluster -810	GOBP	GO:0006614	3278	364	96	49	4.5966	4.0207E-23	1.4505E-19
+Cluster	Cluster -810	GOBP	GO:0006613	3278	364	97	49	4.5492	7.3208E-23	2.1128E-19
+Cluster	Cluster -810	GOBP name	cotranslational protein targeting to membrane	3278	364	97	49	4.5492	7.3208E-23	2.1128E-19
+Cluster	Cluster -810	GOBP	GO:0045047	3278	364	99	50	4.5482	2.5873E-23	1.2445E-19
+Cluster	Cluster -810	GOBP	GO:0072599	3278	364	99	50	4.5482	2.5873E-23	1.2445E-19
+Cluster	Cluster -810	GOBP name	establishment of protein localization in endoplasmic reticulum	3278	364	99	50	4.5482	2.5873E-23	1.2445E-19
+Cluster	Cluster -810	GOBP name	protein targeting to ER	3278	364	99	50	4.5482	2.5873E-23	1.2445E-19
+Cluster	Cluster -810	GOCC name	small ribosomal subunit	3278	364	49	24	4.4109	2.453E-11	4.1906E-09
+Cluster	Cluster -810	GOCC	GO:0015935	3278	364	49	24	4.4109	2.453E-11	4.1906E-09
+Cluster	Cluster -808	GOBP name	NADP metabolic process	3278	448	15	9	4.3902	3.2659E-05	0.0048584
+Cluster	Cluster -808	GOBP	GO:0006739	3278	448	15	9	4.3902	3.2659E-05	0.0048584
+Cluster	Cluster -810	GOBP	GO:0019083	3278	364	101	48	4.2798	6.0907E-21	1.2555E-17
+Cluster	Cluster -810	GOBP name	viral transcription	3278	364	101	48	4.2798	6.0907E-21	1.2555E-17
+Cluster	Cluster -810	GOBP	GO:0006612	3278	364	113	53	4.2238	9.8741E-23	2.3747E-19
+Cluster	Cluster -810	GOBP name	protein targeting to membrane	3278	364	113	53	4.2238	9.8741E-23	2.3747E-19
+Cluster	Cluster -810	GOBP name	ribonucleoside monophosphate biosynthetic process	3278	364	20	9	4.0525	0.00011119	0.013831
+Cluster	Cluster -810	GOBP	GO:0009156	3278	364	20	9	4.0525	0.00011119	0.013831
+Cluster	Cluster -808	Student's T-test significant	D336H_ipc	3278	448	812	448	4.0369	0	0
+Cluster	Cluster -808	Student's T-test Significant D336H_ipc	+	3278	448	812	448	4.0369	0	0
+Cluster	Cluster -810	Student's T-test Significant D336H_ipc	+	3278	364	812	364	4.0369	1.7656E-254	1.7656E-254
+Cluster	Cluster -810	Student's T-test significant	D336H_ipc	3278	364	812	364	4.0369	1.7656E-254	1.7656E-254
+Cluster	Cluster -810	GOCC	GO:0015934	3278	364	60	26	3.9024	1.1066E-10	1.5123E-08
+Cluster	Cluster -810	GOCC name	large ribosomal subunit	3278	364	60	26	3.9024	1.1066E-10	1.5123E-08
+Cluster	Cluster -808	KEGG name	Lysine degradation	3278	448	19	10	3.851	5.2613E-05	0.0066555
+Cluster	Cluster -808	GOBP	GO:0006754	3278	448	19	10	3.851	5.2613E-05	0.0073709
+Cluster	Cluster -808	GOBP	GO:0006635	3278	448	19	10	3.851	5.2613E-05	0.0073709
+Cluster	Cluster -808	GOBP name	fatty acid beta-oxidation	3278	448	19	10	3.851	5.2613E-05	0.0073709
+Cluster	Cluster -808	GOBP name	ATP biosynthetic process	3278	448	19	10	3.851	5.2613E-05	0.0073709
+Cluster	Cluster -808	KEGG	ko00310	3278	448	19	10	3.851	5.2613E-05	0.0066555
+Cluster	Cluster -808	GOBP name	ATP metabolic process	3278	448	25	13	3.8048	4.6476E-06	0.00090501
+Cluster	Cluster -808	GOBP	GO:0046034	3278	448	25	13	3.8048	4.6476E-06	0.00090501
+Cluster	Cluster -810	GOBP name	cellular component biogenesis at cellular level	3278	364	44	18	3.6841	2.4784E-07	6.2742E-05
+Cluster	Cluster -810	GOBP	GO:0071843	3278	364	44	18	3.6841	2.4784E-07	6.2742E-05
+Cluster	Cluster -810	GOMF name	structural constituent of ribosome	3278	364	120	49	3.6772	6.6931E-18	2.8714E-14
+Cluster	Cluster -810	GOMF	GO:0003735	3278	364	120	49	3.6772	6.6931E-18	2.8714E-14
+Cluster	Cluster -808	GOCC	GO:0043202	3278	448	18	9	3.6585	0.00020563	0.0073955
+Cluster	Cluster -808	GOCC	GO:0005775	3278	448	18	9	3.6585	0.00020563	0.0073955
+Cluster	Cluster -808	GOCC name	lysosomal lumen	3278	448	18	9	3.6585	0.00020563	0.0073955
+Cluster	Cluster -808	GOCC name	vacuolar lumen	3278	448	18	9	3.6585	0.00020563	0.0073955
+Cluster	Cluster -810	GOBP	GO:0000956	3278	364	139	55	3.5633	2.9099E-19	4.6656E-16
+Cluster	Cluster -810	GOBP name	nuclear-transcribed mRNA catabolic process	3278	364	139	55	3.5633	2.9099E-19	4.6656E-16
+Cluster	Cluster -810	GOBP name	ribonucleoprotein complex biogenesis	3278	364	43	17	3.5603	9.4522E-07	0.0002165
+Cluster	Cluster -810	GOBP	GO:0022613	3278	364	43	17	3.5603	9.4522E-07	0.0002165
+Cluster	Cluster -808	KEGG	ko00280	3278	448	33	16	3.5476	1.2142E-06	0.0003072
+Cluster	Cluster -808	KEGG name	Valine, leucine and isoleucine degradation	3278	448	33	16	3.5476	1.2142E-06	0.0003072
+Cluster	Cluster -810	GOBP name	viral infectious cycle	3278	364	122	48	3.5431	9.0695E-17	8.1795E-14
+Cluster	Cluster -810	GOBP	GO:0019058	3278	364	122	48	3.5431	9.0695E-17	8.1795E-14
+Cluster	Cluster -808	GOCC	GO:0016469	3278	448	23	11	3.4994	6.7175E-05	0.0030602
+Cluster	Cluster -808	GOCC name	proton-transporting two-sector ATPase complex	3278	448	23	11	3.4994	6.7175E-05	0.0030602
+Cluster	Cluster -810	GOBP	GO:0006414	3278	364	141	54	3.4489	3.6834E-18	4.4293E-15
+Cluster	Cluster -810	GOBP name	translational elongation	3278	364	141	54	3.4489	3.6834E-18	4.4293E-15
+Cluster	Cluster -808	GOBP	GO:0009142	3278	448	34	16	3.4433	1.9882E-06	0.00042191
+Cluster	Cluster -808	GOBP name	nucleoside triphosphate biosynthetic process	3278	448	34	16	3.4433	1.9882E-06	0.00042191
+Cluster	Cluster -810	GOBP	GO:0006402	3278	364	144	55	3.4396	2.0078E-18	2.6339E-15
+Cluster	Cluster -810	GOBP name	mRNA catabolic process	3278	364	144	55	3.4396	2.0078E-18	2.6339E-15
+Cluster	Cluster -808	GOBP name	purine nucleoside triphosphate biosynthetic process	3278	448	24	11	3.3536	0.00010737	0.013472
+Cluster	Cluster -808	GOBP	GO:0009145	3278	448	24	11	3.3536	0.00010737	0.013472
+Cluster	Cluster -808	GOBP name	ribonucleoside triphosphate metabolic process	3278	448	35	16	3.3449	3.1748E-06	0.00064524
+Cluster	Cluster -808	GOBP	GO:0009199	3278	448	35	16	3.3449	3.1748E-06	0.00064524
+Cluster	Cluster -810	GOBP name	translational termination	3278	364	136	50	3.3108	5.3067E-16	4.5045E-13
+Cluster	Cluster -810	GOBP	GO:0006415	3278	364	136	50	3.3108	5.3067E-16	4.5045E-13
+Cluster	Cluster -808	GOBP	GO:0009205	3278	448	31	14	3.3044	1.5477E-05	0.0024276
+Cluster	Cluster -808	GOBP name	purine ribonucleoside triphosphate metabolic process	3278	448	31	14	3.3044	1.5477E-05	0.0024276
+Cluster	Cluster -810	GOBP	GO:0006401	3278	364	156	57	3.2905	5.1661E-18	5.7343E-15
+Cluster	Cluster -810	GOBP name	RNA catabolic process	3278	364	156	57	3.2905	5.1661E-18	5.7343E-15
+Cluster	Cluster -810	GOBP	GO:0072594	3278	364	154	56	3.2747	1.3562E-17	1.3978E-14
+Cluster	Cluster -810	GOBP name	establishment of protein localization to organelle	3278	364	154	56	3.2747	1.3562E-17	1.3978E-14
+Cluster	Cluster -810	GOBP	GO:0006413	3278	364	171	62	3.2652	2.2979E-19	4.1448E-16
+Cluster	Cluster -810	GOBP name	translational initiation	3278	364	171	62	3.2652	2.2979E-19	4.1448E-16
+Cluster	Cluster -808	GOBP	GO:0072524	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP	GO:0046496	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP name	nicotinamide nucleotide metabolic process	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP name	ribonucleoside triphosphate biosynthetic process	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP name	pyridine-containing compound metabolic process	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP name	pyridine nucleotide metabolic process	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP	GO:0019362	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP	GO:0009201	3278	448	27	12	3.252	7.5299E-05	0.0099536
+Cluster	Cluster -808	GOBP	GO:0006733	3278	448	28	12	3.1358	0.0001141	0.014072
+Cluster	Cluster -808	GOBP name	oxidoreduction coenzyme metabolic process	3278	448	28	12	3.1358	0.0001141	0.014072
+Cluster	Cluster -810	GOBP name	cellular protein complex disassembly	3278	364	148	51	3.1032	5.7553E-15	4.371E-12
+Cluster	Cluster -810	GOBP	GO:0043624	3278	364	148	51	3.1032	5.7553E-15	4.371E-12
+Cluster	Cluster -810	GOBP	GO:0022415	3278	364	157	54	3.0974	9.1287E-16	7.3182E-13
+Cluster	Cluster -810	GOBP name	viral reproductive process	3278	364	157	54	3.0974	9.1287E-16	7.3182E-13
+Cluster	Cluster -810	GOBP	GO:0048610	3278	364	169	58	3.0906	7.6624E-17	7.3712E-14
+Cluster	Cluster -810	GOBP name	cellular process involved in reproduction	3278	364	169	58	3.0906	7.6624E-17	7.3712E-14
+Cluster	Cluster -810	GOBP name	protein complex disassembly	3278	364	149	51	3.0824	7.8754E-15	5.6821E-12
+Cluster	Cluster -810	GOBP	GO:0043241	3278	364	149	51	3.0824	7.8754E-15	5.6821E-12
+Cluster	Cluster -808	GOBP name	purine nucleoside triphosphate metabolic process	3278	448	38	16	3.0808	1.1324E-05	0.0019453
+Cluster	Cluster -808	GOBP	GO:0009144	3278	448	38	16	3.0808	1.1324E-05	0.0019453
+Cluster	Cluster -808	GOBP name	lipid modification	3278	448	29	12	3.0277	0.00016853	0.019772
+Cluster	Cluster -808	GOBP	GO:0030258	3278	448	29	12	3.0277	0.00016853	0.019772
+Cluster	Cluster -810	GOBP	GO:0044085	3278	364	54	18	3.0018	7.513E-06	0.0013384
+Cluster	Cluster -810	GOBP name	cellular component biogenesis	3278	364	54	18	3.0018	7.513E-06	0.0013384
+Cluster	Cluster -808	GOBP	GO:0009141	3278	448	50	20	2.9268	2.4055E-06	0.00049588
+Cluster	Cluster -808	GOBP name	nucleoside triphosphate metabolic process	3278	448	50	20	2.9268	2.4055E-06	0.00049588
+Cluster	Cluster -810	GOBP name	translation	3278	364	216	70	2.9184	1.0728E-18	1.548E-15
+Cluster	Cluster -810	GOBP	GO:0006412	3278	364	216	70	2.9184	1.0728E-18	1.548E-15
+Cluster	Cluster -808	GOBP	GO:0009152	3278	448	43	17	2.8928	1.6147E-05	0.0025054
+Cluster	Cluster -808	GOBP name	purine ribonucleotide biosynthetic process	3278	448	43	17	2.8928	1.6147E-05	0.0025054
+Cluster	Cluster -810	GOBP	GO:0034623	3278	364	165	52	2.8381	1.8777E-13	1.2316E-10
+Cluster	Cluster -810	GOBP name	cellular macromolecular complex disassembly	3278	364	165	52	2.8381	1.8777E-13	1.2316E-10
+Cluster	Cluster -808	GOBP	GO:0009260	3278	448	49	19	2.8372	7.2423E-06	0.0013384
+Cluster	Cluster -808	GOBP name	ribonucleotide biosynthetic process	3278	448	49	19	2.8372	7.2423E-06	0.0013384
+Cluster	Cluster -810	GOBP name	macromolecular complex disassembly	3278	364	166	52	2.821	2.4601E-13	1.5435E-10
+Cluster	Cluster -810	GOBP	GO:0032984	3278	364	166	52	2.821	2.4601E-13	1.5435E-10
+Cluster	Cluster -810	GOCC name	ribosome	3278	364	74	23	2.799	1.6474E-06	0.00014683
+Cluster	Cluster -810	GOCC	GO:0005840	3278	364	74	23	2.799	1.6474E-06	0.00014683
+Cluster	Cluster -808	GOBP	GO:0006164	3278	448	45	17	2.7642	3.177E-05	0.0047755
+Cluster	Cluster -808	GOBP name	purine nucleotide biosynthetic process	3278	448	45	17	2.7642	3.177E-05	0.0047755
+Cluster	Cluster -810	GOMF name	translation factor activity, nucleic acid binding	3278	364	60	18	2.7016	3.6263E-05	0.014142
+Cluster	Cluster -810	GOMF	GO:0008135	3278	364	60	18	2.7016	3.6263E-05	0.014142
+Cluster	Cluster -808	GOBP name	purine ribonucleotide metabolic process	3278	448	52	19	2.6735	1.9125E-05	0.0029359
+Cluster	Cluster -808	GOBP	GO:0009150	3278	448	52	19	2.6735	1.9125E-05	0.0029359
+Cluster	Cluster -808	GOBP name	ribonucleotide metabolic process	3278	448	60	21	2.5609	1.5037E-05	0.0023934
+Cluster	Cluster -808	GOBP	GO:0009259	3278	448	60	21	2.5609	1.5037E-05	0.0023934
+Cluster	Cluster -810	GOCC name	integral to plasma membrane	3278	364	78	22	2.54	1.5079E-05	0.00083544
+Cluster	Cluster -810	GOCC	GO:0005887	3278	364	78	22	2.54	1.5079E-05	0.00083544
+Cluster	Cluster -808	GOBP name	organic acid catabolic process	3278	448	71	24	2.4733	7.4669E-06	0.0013384
+Cluster	Cluster -808	GOBP	GO:0046395	3278	448	71	24	2.4733	7.4669E-06	0.0013384
+Cluster	Cluster -808	GOBP name	carboxylic acid catabolic process	3278	448	71	24	2.4733	7.4669E-06	0.0013384
+Cluster	Cluster -808	GOBP	GO:0016054	3278	448	71	24	2.4733	7.4669E-06	0.0013384
+Cluster	Cluster -810	GOMF name	helicase activity	3278	364	73	20	2.4673	5.5859E-05	0.018433
+Cluster	Cluster -810	GOMF	GO:0004386	3278	364	73	20	2.4673	5.5859E-05	0.018433
+Cluster	Cluster -810	GOCC name	intrinsic to plasma membrane	3278	364	81	22	2.4459	2.819E-05	0.0015208
+Cluster	Cluster -810	GOCC	GO:0031226	3278	364	81	22	2.4459	2.819E-05	0.0015208
+Cluster	Cluster -808	GOBP	GO:0009165	3278	448	72	24	2.439	9.7195E-06	0.0016898
+Cluster	Cluster -808	GOBP name	nucleotide biosynthetic process	3278	448	72	24	2.439	9.7195E-06	0.0016898
+Cluster	Cluster -810	GOBP	GO:0006605	3278	364	211	57	2.4328	1.4908E-11	8.2738E-09
+Cluster	Cluster -810	GOBP name	protein targeting	3278	364	211	57	2.4328	1.4908E-11	8.2738E-09
+Cluster	Cluster -810	GOMF	GO:0003729	3278	364	82	22	2.4161	3.4405E-05	0.014142
+Cluster	Cluster -810	GOMF name	mRNA binding	3278	364	82	22	2.4161	3.4405E-05	0.014142
+Cluster	Cluster -808	GOCC name	mitochondrial matrix	3278	448	138	43	2.2799	3.0778E-08	3.5052E-06
+Cluster	Cluster -808	GOCC	GO:0005759	3278	448	138	43	2.2799	3.0778E-08	3.5052E-06
+Cluster	Cluster -808	GOBP name	nucleotide metabolic process	3278	448	132	41	2.2727	7.1383E-08	2.2392E-05
+Cluster	Cluster -808	GOBP	GO:0009117	3278	448	132	41	2.2727	7.1383E-08	2.2392E-05
+Cluster	Cluster -808	GOBP name	nucleoside phosphate metabolic process	3278	448	132	41	2.2727	7.1383E-08	2.2392E-05
+Cluster	Cluster -808	GOBP	GO:0006753	3278	448	132	41	2.2727	7.1383E-08	2.2392E-05
+Cluster	Cluster -810	GOBP name	regulation of translation	3278	364	131	33	2.2686	1.9225E-06	0.00041405
+Cluster	Cluster -810	GOBP	GO:0006417	3278	364	131	33	2.2686	1.9225E-06	0.00041405
+Cluster	Cluster -810	GOMF	GO:0005198	3278	364	229	57	2.2415	4.8564E-10	1.0417E-06
+Cluster	Cluster -810	GOMF name	structural molecule activity	3278	364	229	57	2.2415	4.8564E-10	1.0417E-06
+Cluster	Cluster -810	GOBP name	reproductive process	3278	364	332	82	2.2242	5.2538E-14	3.6101E-11
+Cluster	Cluster -810	GOBP	GO:0022414	3278	364	332	82	2.2242	5.2538E-14	3.6101E-11
+Cluster	Cluster -808	GOCC name	intracellular organelle lumen	3278	448	221	67	2.2183	1.2832E-11	2.3914E-09
+Cluster	Cluster -808	GOCC	GO:0070013	3278	448	221	67	2.2183	1.2832E-11	2.3914E-09
+Cluster	Cluster -808	GOBP name	nucleobase-containing compound biosynthetic process	3278	448	81	24	2.168	7.8492E-05	0.010204
+Cluster	Cluster -808	GOBP	GO:0034654	3278	448	81	24	2.168	7.8492E-05	0.010204
+Cluster	Cluster -808	GOCC	GO:0043233	3278	448	230	68	2.1633	3.1358E-11	4.9449E-09
+Cluster	Cluster -808	GOCC name	organelle lumen	3278	448	230	68	2.1633	3.1358E-11	4.9449E-09
+Cluster	Cluster -808	GOBP name	small molecule catabolic process	3278	448	109	32	2.1481	7.038E-06	0.0013189
+Cluster	Cluster -808	GOBP	GO:0044282	3278	448	109	32	2.1481	7.038E-06	0.0013189
+Cluster	Cluster -808	GOBP	GO:0055086	3278	448	156	45	2.1107	1.8004E-07	4.9019E-05
+Cluster	Cluster -808	GOBP name	nucleobase-containing small molecule metabolic process	3278	448	156	45	2.1107	1.8004E-07	4.9019E-05
+Cluster	Cluster -808	GOCC name	membrane-enclosed lumen	3278	448	253	72	2.0823	5.5289E-11	8.0959E-09
+Cluster	Cluster -808	GOCC	GO:0031974	3278	448	253	72	2.0823	5.5289E-11	8.0959E-09
+Cluster	Cluster -808	GOBP name	heterocycle metabolic process	3278	448	179	50	2.0438	1.1164E-07	3.222E-05
+Cluster	Cluster -808	GOBP	GO:0046483	3278	448	179	50	2.0438	1.1164E-07	3.222E-05
+Cluster	Cluster -808	GOBP name	heterocycle biosynthetic process	3278	448	90	25	2.0325	0.00016819	0.019772
+Cluster	Cluster -808	GOBP	GO:0018130	3278	448	90	25	2.0325	0.00016819	0.019772
+Cluster	Cluster -810	GOCC	GO:0030529	3278	364	434	97	2.0127	1.3191E-13	3.0046E-11
+Cluster	Cluster -810	GOCC name	ribonucleoprotein complex	3278	364	434	97	2.0127	1.3191E-13	3.0046E-11
+Cluster	Cluster -810	GOBP name	cellular component disassembly at cellular level	3278	364	243	54	2.0012	9.4653E-08	2.9061E-05
+Cluster	Cluster -810	GOBP	GO:0071845	3278	364	243	54	2.0012	9.4653E-08	2.9061E-05
+Cluster	Cluster -810	GOBP name	cellular component disassembly	3278	364	244	54	1.993	1.0914E-07	3.214E-05
+Cluster	Cluster -810	GOBP	GO:0022411	3278	364	244	54	1.993	1.0914E-07	3.214E-05
+Cluster	Cluster -810	GOBP name	mRNA metabolic process	3278	364	375	81	1.9452	1.4724E-10	7.8689E-08
+Cluster	Cluster -810	GOBP	GO:0016071	3278	364	375	81	1.9452	1.4724E-10	7.8689E-08
+Cluster	Cluster -810	GOCC name	focal adhesion	3278	364	213	45	1.9026	4.7436E-06	0.00029468
+Cluster	Cluster -810	GOCC name	cell-substrate adherens junction	3278	364	213	45	1.9026	4.7436E-06	0.00029468
+Cluster	Cluster -810	GOCC	GO:0005925	3278	364	213	45	1.9026	4.7436E-06	0.00029468
+Cluster	Cluster -810	GOCC	GO:0030055	3278	364	213	45	1.9026	4.7436E-06	0.00029468
+Cluster	Cluster -810	GOCC name	cell-substrate junction	3278	364	213	45	1.9026	4.7436E-06	0.00029468
+Cluster	Cluster -810	GOCC	GO:0005924	3278	364	213	45	1.9026	4.7436E-06	0.00029468
+Cluster	Cluster -808	GOBP	GO:0055114	3278	448	193	50	1.8956	1.2855E-06	0.00028983
+Cluster	Cluster -808	GOBP name	oxidation-reduction process	3278	448	193	50	1.8956	1.2855E-06	0.00028983
+Cluster	Cluster -810	GOCC name	adherens junction	3278	364	227	46	1.8249	1.1462E-05	0.00067137
+Cluster	Cluster -810	GOCC	GO:0005912	3278	364	227	46	1.8249	1.1462E-05	0.00067137
+Cluster	Cluster -810	GOBP name	posttranscriptional regulation of gene expression	3278	364	198	40	1.8193	4.4533E-05	0.0063625
+Cluster	Cluster -810	GOBP	GO:0010608	3278	364	198	40	1.8193	4.4533E-05	0.0063625
+Cluster	Cluster -808	GOMF	GO:0046983	3278	448	169	42	1.8184	2.5233E-05	0.013531
+Cluster	Cluster -808	GOMF name	protein dimerization activity	3278	448	169	42	1.8184	2.5233E-05	0.013531
+Cluster	Cluster -810	GOCC	GO:0070161	3278	364	229	46	1.809	1.4418E-05	0.00082102
+Cluster	Cluster -810	GOCC name	anchoring junction	3278	364	229	46	1.809	1.4418E-05	0.00082102
+Cluster	Cluster -810	GOBP	GO:0034621	3278	364	414	82	1.7837	9.0812E-09	3.4485E-06
+Cluster	Cluster -810	GOBP name	cellular macromolecular complex subunit organization	3278	364	414	82	1.7837	9.0812E-09	3.4485E-06
+Cluster	Cluster -808	GOBP name	cellular ketone metabolic process	3278	448	279	68	1.7833	1.85E-07	4.9435E-05
+Cluster	Cluster -808	GOBP	GO:0042180	3278	448	279	68	1.7833	1.85E-07	4.9435E-05
+Cluster	Cluster -808	GOBP name	organic acid metabolic process	3278	448	280	68	1.777	2.1338E-07	5.5263E-05
+Cluster	Cluster -808	GOBP	GO:0006082	3278	448	280	68	1.777	2.1338E-07	5.5263E-05
+Cluster	Cluster -808	GOBP name	oxoacid metabolic process	3278	448	276	67	1.7762	2.6801E-07	6.5549E-05
+Cluster	Cluster -808	GOBP name	carboxylic acid metabolic process	3278	448	276	67	1.7762	2.6801E-07	6.5549E-05
+Cluster	Cluster -808	GOBP	GO:0043436	3278	448	276	67	1.7762	2.6801E-07	6.5549E-05
+Cluster	Cluster -808	GOBP	GO:0019752	3278	448	276	67	1.7762	2.6801E-07	6.5549E-05
+Cluster	Cluster -810	GOBP name	intracellular protein transport	3278	364	315	62	1.7725	9.37E-07	0.0002165
+Cluster	Cluster -810	GOBP	GO:0006886	3278	364	315	62	1.7725	9.37E-07	0.0002165
+Cluster	Cluster -810	GOBP name	protein complex subunit organization	3278	364	388	75	1.7408	1.2624E-07	3.5031E-05
+Cluster	Cluster -810	GOBP	GO:0071822	3278	364	388	75	1.7408	1.2624E-07	3.5031E-05
+Cluster	Cluster -810	GOBP	GO:0032774	3278	364	513	99	1.7379	7.4618E-10	3.3648E-07
+Cluster	Cluster -810	GOBP name	RNA biosynthetic process	3278	364	513	99	1.7379	7.4618E-10	3.3648E-07
+Cluster	Cluster -810	GOMF	GO:0003723	3278	364	427	81	1.7083	8.4633E-08	7.2615E-05
+Cluster	Cluster -810	GOMF name	RNA binding	3278	364	427	81	1.7083	8.4633E-08	7.2615E-05
+Cluster	Cluster -810	GOBP	GO:0044265	3278	364	328	62	1.7023	3.7255E-06	0.00073643
+Cluster	Cluster -810	GOBP name	cellular macromolecule catabolic process	3278	364	328	62	1.7023	3.7255E-06	0.00073643
+Cluster	Cluster -810	GOBP	GO:0010467	3278	364	503	95	1.7008	5.9857E-09	2.3344E-06
+Cluster	Cluster -810	GOBP name	gene expression	3278	364	503	95	1.7008	5.9857E-09	2.3344E-06
+Cluster	Cluster -810	GOBP name	viral reproduction	3278	364	335	63	1.6936	3.68E-06	0.00073643
+Cluster	Cluster -810	GOBP	GO:0016032	3278	364	335	63	1.6936	3.68E-06	0.00073643
+Cluster	Cluster -810	GOBP name	macromolecule catabolic process	3278	364	353	65	1.6582	5.2546E-06	0.00099767
+Cluster	Cluster -810	GOBP	GO:0009057	3278	364	353	65	1.6582	5.2546E-06	0.00099767
+Cluster	Cluster -810	GOBP name	cellular macromolecule biosynthetic process	3278	364	662	121	1.646	1.8679E-10	9.6266E-08
+Cluster	Cluster -810	GOBP	GO:0034645	3278	364	662	121	1.646	1.8679E-10	9.6266E-08
+Cluster	Cluster -810	GOCC	GO:0005730	3278	364	411	75	1.6433	1.3161E-06	0.00012264
+Cluster	Cluster -810	GOCC name	nucleolus	3278	364	411	75	1.6433	1.3161E-06	0.00012264
+Cluster	Cluster -810	GOBP	GO:0043933	3278	364	551	100	1.6344	1.9125E-08	6.8992E-06
+Cluster	Cluster -810	GOBP name	macromolecular complex subunit organization	3278	364	551	100	1.6344	1.9125E-08	6.8992E-06
+Cluster	Cluster -810	GOBP	GO:0009059	3278	364	667	121	1.6337	3.1305E-10	1.5577E-07
+Cluster	Cluster -810	GOBP name	macromolecule biosynthetic process	3278	364	667	121	1.6337	3.1305E-10	1.5577E-07
+Cluster	Cluster -808	GOCC	GO:0043230	3278	448	1067	237	1.6252	3.8601E-22	1.5826E-19
+Cluster	Cluster -808	GOCC	GO:0065010	3278	448	1067	237	1.6252	3.8601E-22	1.5826E-19
+Cluster	Cluster -808	GOCC name	extracellular membrane-bounded organelle	3278	448	1067	237	1.6252	3.8601E-22	1.5826E-19
+Cluster	Cluster -808	GOCC name	extracellular organelle	3278	448	1067	237	1.6252	3.8601E-22	1.5826E-19
+Cluster	Cluster -808	GOCC name	extracellular vesicular exosome	3278	448	1067	237	1.6252	3.8601E-22	1.5826E-19
+Cluster	Cluster -808	GOCC	GO:0070062	3278	448	1067	237	1.6252	3.8601E-22	1.5826E-19
+Cluster	Cluster -808	GOCC name	extracellular region part	3278	448	1125	247	1.6065	1.0731E-22	1.5826E-19
+Cluster	Cluster -808	GOCC	GO:0044421	3278	448	1125	247	1.6065	1.0731E-22	1.5826E-19
+Cluster	Cluster -808	GOCC name	vesicle	3278	448	1136	248	1.5974	2.0314E-22	1.5826E-19
+Cluster	Cluster -808	GOCC	GO:0031982	3278	448	1136	248	1.5974	2.0314E-22	1.5826E-19
+Cluster	Cluster -808	GOCC name	membrane-bounded vesicle	3278	448	1122	244	1.5912	1.3458E-21	4.5982E-19
+Cluster	Cluster -808	GOCC	GO:0031988	3278	448	1122	244	1.5912	1.3458E-21	4.5982E-19
+Cluster	Cluster -810	GOCC	GO:0030054	3278	364	307	54	1.584	0.00011131	0.0047538
+Cluster	Cluster -810	GOCC name	cell junction	3278	364	307	54	1.584	0.00011131	0.0047538
+Cluster	Cluster -810	GOBP	GO:0044249	3278	364	996	171	1.5461	6.5389E-13	3.9315E-10
+Cluster	Cluster -810	GOBP name	cellular biosynthetic process	3278	364	996	171	1.5461	6.5389E-13	3.9315E-10
+Cluster	Cluster -810	GOBP name	biosynthetic process	3278	364	1023	172	1.5141	4.1146E-12	2.375E-09
+Cluster	Cluster -810	GOBP	GO:0009058	3278	364	1023	172	1.5141	4.1146E-12	2.375E-09
+Cluster	Cluster -808	GOCC name	mitochondrion	3278	448	504	104	1.5098	7.3435E-07	7.1686E-05
+Cluster	Cluster -808	GOCC	GO:0005739	3278	448	504	104	1.5098	7.3435E-07	7.1686E-05
+Cluster	Cluster -810	GOMF name	nucleic acid binding	3278	364	751	121	1.451	5.0351E-07	0.00036001
+Cluster	Cluster -810	GOMF	GO:0003676	3278	364	751	121	1.451	5.0351E-07	0.00036001
+Cluster	Cluster -808	GOBP	GO:0044281	3278	448	767	151	1.4405	2.6269E-08	8.615E-06
+Cluster	Cluster -808	GOBP name	small molecule metabolic process	3278	448	767	151	1.4405	2.6269E-08	8.615E-06
+Cluster	Cluster -808	GOCC name	mitochondrial part	3278	448	390	76	1.4259	0.00016584	0.0063245
+Cluster	Cluster -808	GOCC	GO:0044429	3278	448	390	76	1.4259	0.00016584	0.0063245
+Cluster	Cluster -810	GOBP	GO:0016070	3278	364	876	138	1.4187	2.1446E-07	5.5263E-05
+Cluster	Cluster -810	GOBP name	RNA metabolic process	3278	364	876	138	1.4187	2.1446E-07	5.5263E-05
+Cluster	Cluster -810	GOBP	GO:0006139	3278	364	1183	183	1.3931	1.4629E-09	5.9485E-07
+Cluster	Cluster -810	GOBP name	nucleobase-containing compound metabolic process	3278	364	1183	183	1.3931	1.4629E-09	5.9485E-07
+Cluster	Cluster -810	GOBP name	nucleic acid metabolic process	3278	364	1039	159	1.3781	1.0608E-07	3.1891E-05
+Cluster	Cluster -810	GOBP	GO:0090304	3278	364	1039	159	1.3781	1.0608E-07	3.1891E-05
+Cluster	Cluster -810	GOCC name	non-membrane-bounded organelle	3278	364	908	138	1.3687	1.9203E-06	0.00014726
+Cluster	Cluster -810	GOCC	GO:0043232	3278	364	908	138	1.3687	1.9203E-06	0.00014726
+Cluster	Cluster -810	GOCC name	intracellular non-membrane-bounded organelle	3278	364	908	138	1.3687	1.9203E-06	0.00014726
+Cluster	Cluster -810	GOCC	GO:0043228	3278	364	908	138	1.3687	1.9203E-06	0.00014726
+Cluster	Cluster -810	GOBP	GO:0034641	3278	364	1342	197	1.322	2.3697E-08	8.1417E-06
+Cluster	Cluster -810	GOBP name	cellular nitrogen compound metabolic process	3278	364	1342	197	1.322	2.3697E-08	8.1417E-06
+Cluster	Cluster -810	GOBP name	nitrogen compound metabolic process	3278	364	1360	199	1.3177	2.447E-08	8.2118E-06
+Cluster	Cluster -810	GOBP	GO:0006807	3278	364	1360	199	1.3177	2.447E-08	8.2118E-06
+Cluster	Cluster -810	GOCC name	cytosol	3278	364	1126	164	1.3116	1.9396E-06	0.00014726
+Cluster	Cluster -810	GOCC	GO:0005829	3278	364	1126	164	1.3116	1.9396E-06	0.00014726
+Cluster	Cluster -808	GOMF	GO:0003824	3278	448	1372	241	1.2853	1.2638E-08	1.6516E-05
+Cluster	Cluster -808	GOMF name	catalytic activity	3278	448	1372	241	1.2853	1.2638E-08	1.6516E-05
+Cluster	Cluster -810	GOBP	GO:0071841	3278	364	1179	162	1.2374	8.0701E-05	0.010397
+Cluster	Cluster -810	GOBP name	cellular component organization or biogenesis at cellular level	3278	364	1179	162	1.2374	8.0701E-05	0.010397
+Cluster	Cluster -810	GOCC name	extracellular region part	3278	364	1125	154	1.2328	0.00016066	0.0063245
+Cluster	Cluster -810	GOCC	GO:0044421	3278	364	1125	154	1.2328	0.00016066	0.0063245
+Cluster	Cluster -810	GOBP	GO:0071840	3278	364	1339	179	1.2039	0.00013545	0.016424
+Cluster	Cluster -810	GOBP name	cellular component organization or biogenesis	3278	364	1339	179	1.2039	0.00013545	0.016424
+Cluster	Cluster -810	GOCC	GO:0016020	3278	364	1545	205	1.1949	4.3954E-05	0.0021454
+Cluster	Cluster -810	GOCC name	membrane	3278	364	1545	205	1.1949	4.3954E-05	0.0021454
+Cluster	Cluster -810	GOCC name	cytoplasm	3278	364	1357	180	1.1945	0.00019991	0.0073955
+Cluster	Cluster -810	GOCC	GO:0005737	3278	364	1357	180	1.1945	0.00019991	0.0073955
+Cluster	Cluster -810	GOCC	GO:0032991	3278	364	1498	197	1.1843	0.00013126	0.0054915
+Cluster	Cluster -810	GOCC name	macromolecular complex	3278	364	1498	197	1.1843	0.00013126	0.0054915
+Cluster	Cluster -808	GOCC name	cytoplasmic part	3278	448	2171	350	1.1796	1.2367E-09	1.4913E-07
+Cluster	Cluster -808	GOCC	GO:0044444	3278	448	2171	350	1.1796	1.2367E-09	1.4913E-07
+Cluster	Cluster -808	GOCC name	membrane-bounded organelle	3278	448	2408	380	1.1547	3.2024E-10	4.1031E-08
+Cluster	Cluster -808	GOCC	GO:0043227	3278	448	2408	380	1.1547	3.2024E-10	4.1031E-08
+Cluster	Cluster -808	GOCC	GO:0043226	3278	448	2619	396	1.1063	1.3598E-07	1.4672E-05
+Cluster	Cluster -808	GOCC name	organelle	3278	448	2619	396	1.1063	1.3598E-07	1.4672E-05
+Cluster	Cluster -808	GOCC	GO:0032991	3278	448	1498	169	0.82548	4.9937E-05	0.0023807
+Cluster	Cluster -808	GOCC name	macromolecular complex	3278	448	1498	169	0.82548	4.9937E-05	0.0023807
+Cluster	Cluster -808	GOBP name	macromolecule metabolic process	3278	448	1711	192	0.82107	4.7038E-06	0.00090501
+Cluster	Cluster -808	GOBP	GO:0043170	3278	448	1711	192	0.82107	4.7038E-06	0.00090501
+Cluster	Cluster -808	GOBP	GO:0044260	3278	448	1658	177	0.78112	1.1523E-07	3.2603E-05
+Cluster	Cluster -808	GOBP name	cellular macromolecule metabolic process	3278	448	1658	177	0.78112	1.1523E-07	3.2603E-05
+Cluster	Cluster -808	GOCC name	intracellular non-membrane-bounded organelle	3278	448	908	94	0.75748	0.00010647	0.004644
+Cluster	Cluster -808	GOCC name	non-membrane-bounded organelle	3278	448	908	94	0.75748	0.00010647	0.004644
+Cluster	Cluster -808	GOCC	GO:0043232	3278	448	908	94	0.75748	0.00010647	0.004644
+Cluster	Cluster -808	GOCC	GO:0043228	3278	448	908	94	0.75748	0.00010647	0.004644
+Cluster	Cluster -808	GOCC name	nuclear part	3278	448	1374	140	0.74554	1.6802E-07	1.7222E-05
+Cluster	Cluster -808	GOCC	GO:0044428	3278	448	1374	140	0.74554	1.6802E-07	1.7222E-05
+Cluster	Cluster -810	GOCC name	organelle membrane	3278	364	752	60	0.71852	0.00033812	0.011945
+Cluster	Cluster -810	GOCC	GO:0031090	3278	364	752	60	0.71852	0.00033812	0.011945
+Cluster	Cluster -808	GOMF name	nucleic acid binding	3278	448	751	67	0.65278	2.3028E-06	0.0014113
+Cluster	Cluster -808	GOMF	GO:0003676	3278	448	751	67	0.65278	2.3028E-06	0.0014113
+Cluster	Cluster -808	GOBP name	nucleic acid metabolic process	3278	448	1039	90	0.63381	1.484E-09	5.9485E-07
+Cluster	Cluster -808	GOBP	GO:0090304	3278	448	1039	90	0.63381	1.484E-09	5.9485E-07
+Cluster	Cluster -808	GOBP name	RNA biosynthetic process	3278	448	513	44	0.62758	4.0951E-05	0.0059689
+Cluster	Cluster -808	GOBP	GO:0032774	3278	448	513	44	0.62758	4.0951E-05	0.0059689
+Cluster	Cluster -808	GOBP	GO:0009059	3278	448	667	55	0.60335	5.8426E-07	0.00013821
+Cluster	Cluster -808	GOBP name	macromolecule biosynthetic process	3278	448	667	55	0.60335	5.8426E-07	0.00013821
+Cluster	Cluster -808	GOBP name	cellular macromolecule biosynthetic process	3278	448	662	54	0.59685	4.3735E-07	0.00010518
+Cluster	Cluster -808	GOBP	GO:0034645	3278	448	662	54	0.59685	4.3735E-07	0.00010518
+Cluster	Cluster -808	GOCC	GO:0005730	3278	448	411	33	0.58749	5.9784E-05	0.0027854
+Cluster	Cluster -808	GOCC name	nucleolus	3278	448	411	33	0.58749	5.9784E-05	0.0027854
+Cluster	Cluster -808	GOBP	GO:0016070	3278	448	876	70	0.58469	8.814E-10	3.8541E-07
+Cluster	Cluster -808	GOBP name	RNA metabolic process	3278	448	876	70	0.58469	8.814E-10	3.8541E-07
+Cluster	Cluster -808	GOMF name	RNA binding	3278	448	427	34	0.58262	3.5611E-05	0.014142
+Cluster	Cluster -808	GOMF	GO:0003723	3278	448	427	34	0.58262	3.5611E-05	0.014142
+Cluster	Cluster -808	GOCC name	nucleoplasm part	3278	448	277	18	0.47547	3.9552E-05	0.0019776
+Cluster	Cluster -808	GOCC	GO:0044451	3278	448	277	18	0.47547	3.9552E-05	0.0019776
+Cluster	Cluster -808	GOBP	GO:0006397	3278	448	250	14	0.40975	1.1794E-05	0.0020023
+Cluster	Cluster -808	GOBP name	mRNA processing	3278	448	250	14	0.40975	1.1794E-05	0.0020023
+Cluster	Cluster -808	GOBP name	RNA splicing	3278	448	218	12	0.40277	3.524E-05	0.0051889
+Cluster	Cluster -808	GOBP	GO:0008380	3278	448	218	12	0.40277	3.524E-05	0.0051889
+Cluster	Cluster -808	GOBP name	translation	3278	448	216	11	0.37262	1.5046E-05	0.0023934
+Cluster	Cluster -808	GOBP	GO:0006412	3278	448	216	11	0.37262	1.5046E-05	0.0023934
+Cluster	Cluster -808	GOBP	GO:0006396	3278	448	410	20	0.35693	4.8757E-10	2.3452E-07
+Cluster	Cluster -808	GOBP name	RNA processing	3278	448	410	20	0.35693	4.8757E-10	2.3452E-07
+Cluster	Cluster -808	GOBP name	mRNA metabolic process	3278	448	375	17	0.3317	6.1722E-10	2.8731E-07
+Cluster	Cluster -808	GOBP	GO:0016071	3278	448	375	17	0.3317	6.1722E-10	2.8731E-07
+Cluster	Cluster -810	GOBP	GO:0006508	3278	364	194	7	0.32494	7.5876E-05	0.0099536
+Cluster	Cluster -810	GOBP name	proteolysis	3278	364	194	7	0.32494	7.5876E-05	0.0099536
+Cluster	Cluster -810	GOBP	GO:0032446	3278	364	177	6	0.30527	9.9718E-05	0.012622
+Cluster	Cluster -810	GOBP name	protein modification by small protein conjugation	3278	364	177	6	0.30527	9.9718E-05	0.012622
+Cluster	Cluster -810	GOBP	GO:0070647	3278	364	207	7	0.30453	2.4226E-05	0.0036798
+Cluster	Cluster -810	GOBP name	protein modification by small protein conjugation or removal	3278	364	207	7	0.30453	2.4226E-05	0.0036798
+Cluster	Cluster -808	GOCC	GO:0030529	3278	448	434	17	0.28661	5.3437E-13	1.0955E-10
+Cluster	Cluster -808	GOCC name	ribonucleoprotein complex	3278	448	434	17	0.28661	5.3437E-13	1.0955E-10
+Cluster	Cluster -808	GOBP name	nuclear-transcribed mRNA catabolic process	3278	448	139	5	0.2632	4.1703E-05	0.0060177
+Cluster	Cluster -808	GOBP	GO:0000956	3278	448	139	5	0.2632	4.1703E-05	0.0060177
+Cluster	Cluster -808	GOCC	GO:0005681	3278	448	115	4	0.2545	0.0001666	0.0063245
+Cluster	Cluster -808	GOCC name	spliceosomal complex	3278	448	115	4	0.2545	0.0001666	0.0063245
+Cluster	Cluster -810	GOBP	GO:0019941	3278	364	145	4	0.24843	0.00013269	0.016226
+Cluster	Cluster -810	GOBP name	modification-dependent protein catabolic process	3278	364	145	4	0.24843	0.00013269	0.016226
+Cluster	Cluster -808	GOBP name	cellular protein complex disassembly	3278	448	148	5	0.24719	1.455E-05	0.0023934
+Cluster	Cluster -808	GOBP	GO:0043624	3278	448	148	5	0.24719	1.455E-05	0.0023934
+Cluster	Cluster -808	GOBP	GO:0043241	3278	448	149	5	0.24554	1.2925E-05	0.0021687
+Cluster	Cluster -808	GOBP name	protein complex disassembly	3278	448	149	5	0.24554	1.2925E-05	0.0021687
+Cluster	Cluster -810	GOBP	GO:0043632	3278	364	150	4	0.24015	8.2622E-05	0.010551
+Cluster	Cluster -810	GOBP name	modification-dependent macromolecule catabolic process	3278	364	150	4	0.24015	8.2622E-05	0.010551
+Cluster	Cluster -810	GOBP	GO:0051603	3278	364	154	4	0.23391	5.6333E-05	0.0078161
+Cluster	Cluster -810	GOBP name	proteolysis involved in cellular protein catabolic process	3278	364	154	4	0.23391	5.6333E-05	0.0078161
+Cluster	Cluster -808	GOBP	GO:0034623	3278	448	165	5	0.22173	1.8717E-06	0.00040923
+Cluster	Cluster -808	GOBP name	cellular macromolecular complex disassembly	3278	448	165	5	0.22173	1.8717E-06	0.00040923
+Cluster	Cluster -808	GOBP	GO:0032984	3278	448	166	5	0.22039	1.6552E-06	0.00036746
+Cluster	Cluster -808	GOBP name	macromolecular complex disassembly	3278	448	166	5	0.22039	1.6552E-06	0.00036746
+Cluster	Cluster -808	GOBP name	translational initiation	3278	448	171	3	0.12837	2.2833E-08	8.036E-06
+Cluster	Cluster -808	GOBP	GO:0006413	3278	448	171	3	0.12837	2.2833E-08	8.036E-06
+Cluster	Cluster -808	GOCC	GO:0071013	3278	448	70	1	0.10453	0.00034379	0.011945
+Cluster	Cluster -808	GOCC name	catalytic step 2 spliceosome	3278	448	70	1	0.10453	0.00034379	0.011945
+Cluster	Cluster -808	GOBP name	nuclear-transcribed mRNA catabolic process, nonsense-mediated decay	3278	448	96	1	0.076218	9.3743E-06	0.0016496
+Cluster	Cluster -808	GOBP	GO:0000184	3278	448	96	1	0.076218	9.3743E-06	0.0016496
+Cluster	Cluster -808	GOBP name	translational elongation	3278	448	141	1	0.051893	1.4393E-08	5.3254E-06
+Cluster	Cluster -808	GOBP	GO:0006414	3278	448	141	1	0.051893	1.4393E-08	5.3254E-06
+Cluster	Cluster -808	GOBP	GO:0006415	3278	448	136	0	0	1.3234E-09	5.6165E-07
+Cluster	Cluster -808	GOBP name	translational termination	3278	448	136	0	0	1.3234E-09	5.6165E-07
+Cluster	Cluster -808	GOBP	GO:0070125	3278	448	59	0	0	0.0001578	0.018819
+Cluster	Cluster -808	GOCC	GO:0015934	3278	448	60	0	0	0.00013584	0.0055695
+Cluster	Cluster -808	GOBP name	mitochondrial translational elongation	3278	448	59	0	0	0.0001578	0.018819
+Cluster	Cluster -808	KEGG name	Ribosome	3278	448	79	0	0	7.8031E-06	0.0013161
+Cluster	Cluster -808	GOMF name	structural constituent of ribosome	3278	448	120	0	0	1.5399E-08	1.6516E-05
+Cluster	Cluster -808	GOCC name	large ribosomal subunit	3278	448	60	0	0	0.00013584	0.0055695
+Cluster	Cluster -808	KEGG	ko03010	3278	448	79	0	0	7.8031E-06	0.0013161
+Cluster	Cluster -808	GOMF	GO:0003735	3278	448	120	0	0	1.5399E-08	1.6516E-05
