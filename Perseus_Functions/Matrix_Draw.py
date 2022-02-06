@@ -3,6 +3,7 @@ Draw a dot plot with enrichment analysis Matrix
 '''
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 import numpy as np
 
 '''Transform DataFrame x='column name' from string into float, excluding first row'''
@@ -15,20 +16,28 @@ def DF_list(x):
     x = df[x][1:].to_list()
     return x
 
-'''Reduce DataFrame based on 'Category column' with value x'''
-def DF_Reduce(x):
+'''Reduce DataFrame based on 'Category column' with value x (GO or KEGG)'''
+def DF_Reduce_Cat(x):
     df_filtered = df.loc[df['Category column'] == x]
     return df_filtered
 
+'''Reduce DataFrame based on 'Selection value' with value x (Cluster -number)'''
+def DF_Reduce_Sele(x):
+    df_filtered = df.loc[df['Selection value'] == x]
+    return df_filtered
+
 # Read Matrix text file into pandas DataFrame
-M_name = 'Matrix_162.txt'
+M_name = 'Matrix_404.txt'
 MA_name = 'Matrix_All.txt'
 df = pd.read_csv(M_name, sep='\t')
 df_all = pd.read_csv(MA_name, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
-Cat_input = 'GOBP' ### Decide which Category to use
-df = DF_Reduce(Cat_input)
+Cat_input = 'KEGG' ### Decide which Category to use
+df = DF_Reduce_Cat(Cat_input)
+# Reduce DataFrame based on 'Selection value' with Sele_input
+#Select_input = 'Cluster -810' ### Decide which Selection to use '808' or '810'
+#df = DF_Reduce_Sele(Select_input)
 
 # Add a 'Gene Ratio'(Intersection size / Category size) column. !!!First row will be empty (NaN)!!!
 df['Intersection size'] = Tf_float('Intersection size')
@@ -36,51 +45,10 @@ df['Category size'] = Tf_float('Category size')
 df['Gene ratio'] = df['Intersection size'][1:] / df['Category size'][1:]
 '''This df is ready for plot drawing'''
 
-'''Let's compare 'Category value' names back to the original data,
-to filter out more specific targets.'''
-# Reduce df_all to only one column with name Cat_input, excluding first row
-df_all_reduced = df_all[Cat_input][1:]
 
-## Create 2 txt files to compare
-#df['Category value'].to_csv('df_GOBP.txt', index=False, sep='\t')
+## Create txt files to check the outcome
+#df.to_csv('df_GOMF.txt', index=False, sep='\t')
 #df_all_reduced.to_csv('df_all_GOBP.txt', index=False, sep='\t')
-
-'''Read through each row, and compare the last 3 items
-create a list of matched numbers of rows
-'''
-Match = [] # Create a list of matched row numbers (first row is 0)
-def Comp_df_full():
-    global Match
-    for i in df_all_reduced:
-        if type(i) == str: # Only work on rows with strings
-            Temp = [] # Create a list and put each row of selected 'Cat_input' in
-            Temp = i.split(';')
-            for i, v in enumerate(df['Category value']): # i=index, v=value in this for loop, for each row of v, compare it to the list 'Temp'
-                if len(Temp) >= 3: # if the list 'Temp' has at least 3 items, compare v to the last 3
-                    if v.casefold() == Temp[-1] or v.casefold() == Temp[-2] or v.casefold() == Temp[-3]:
-                        Match.append(i)
-                    else:
-                        continue
-                elif len(Temp) >= 2:# if the list 'Temp' has at least 2 items, compare v to the last 2
-                    if v.casefold() == Temp[-1] or v.casefold() == Temp[-2]:
-                        Match.append(i)
-                    else:
-                        continue
-                elif len(Temp) >= 1:# if the list 'Temp' has at least 1 items, compare v to the last 1
-                    if v.casefold() == Temp[-1]:
-                        Match.append(i)
-                    else:
-                        continue
-                else:
-                    continue
-        else:
-            continue
-    Match = sorted(set(Match))
-
-#Comp_df_full()
-
-'''This is the Matched DataFrame for plot drawing'''
-#df = df.iloc[Match]
 
 '''Let's begin to draw the plot'''
 # Plot parameters from user
@@ -104,19 +72,22 @@ c = DF_list(c_input)
 s = DF_list(s_input)
 
 # Draw the scatter plot
-fig, ax = plt.subplots(figsize=(4, 4)) ### Decide plot size
+fig, ax = plt.subplots(figsize=(3, 3)) ### Decide plot size
 sc = ax.scatter(x, y, s, c, cmap='coolwarm')
-ax.invert_xaxis()
 
 # Set plot margins, Title and labels
-ax.margins(0.05, 0.05) ### Decide plot margins
+ax.margins(0.1, 0.1) ### Decide plot margins
 ax.set_xlabel(x_label)
 ax.set_ylabel(y_label)
 ax.set_title(Title)
-ax.set_xticks([0, 1, 2, 3])
 
 # To specify the number of ticks on X axis
-ax.xaxis.set_major_locator(plt.MaxNLocator(5))
+ax.xaxis.set_major_locator(ticker.MaxNLocator(5, integer=True))
+ax.invert_xaxis()
+#plt.xticks(range(1,3))
+#plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(1))
+#ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
+##ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
 
 # Add a colorbar
 cbar = fig.colorbar(sc, anchor=(0, 0), shrink=0.4)
@@ -125,16 +96,21 @@ cbar.ax.set_title('FDR', fontdict = {'size':8})
 ''' Set legend_values from the list 's', 
  divide the list into 5 groups, 
  and grab the last 5 groups' first item '''
-legend_values = np.sort(s)[::len(s)//5][-5:]
+legend_values = np.sort(s)[::len(s)//3][-3:]
 #print(legend_values)
 
 # Get the bounds of colorbar axis
 xmin, ymin, dx, dy = cbar.ax.get_position().bounds
 
+#print(xmin)
+#print(ymin)
+#print(dx)
+#print(dy)
+
 # Setup new axis for the size chart
 xmin -= 0.025
 ymin = 0.5
-dx -= 0.05
+dx = 0.1
 dy = dy
 sax = fig.add_axes([xmin, ymin, dx, dy], frame_on=False, ymargin=0.15)
 

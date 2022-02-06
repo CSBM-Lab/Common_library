@@ -10,9 +10,14 @@ def Tf_float(x):
     x = pd.to_numeric(df[x][1:], downcast='float')
     return x
 
-'''Reduce DataFrame based on 'Category column' with value x'''
-def DF_Reduce(x):
+'''Reduce DataFrame based on 'Category column' with value x (GO or KEGG)'''
+def DF_Reduce_Cat(x):
     df_filtered = df.loc[df['Category column'] == x]
+    return df_filtered
+
+'''Reduce DataFrame based on 'Selection value' with value x (cluster-number)'''
+def DF_Reduce_Sele(x):
+    df_filtered = df.loc[df['Selection value'] == x]
     return df_filtered
 
 # Read Matrix text file into pandas DataFrame
@@ -23,7 +28,11 @@ df_all = pd.read_csv(MA_file, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
 Cat_input = 'GOMF' ### Decide which Category to use
-df = DF_Reduce(Cat_input)
+df = DF_Reduce_Cat(Cat_input)
+
+# Reduce DataFrame based on 'Selection value' with Sele_input
+Sele_input = 'Cluster-810' ### Decide which Selection to use
+df = DF_Reduce_Sele(Sele_input)
 
 # Add a 'Gene Ratio'(Intersection size / Category size) column. !!!First row will be empty (NaN)!!!
 df['Intersection size'] = Tf_float('Intersection size')
