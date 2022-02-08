@@ -22,7 +22,7 @@ def DF_Reduce_Cat(x):
     return df_filtered
 
 '''Reduce DataFrame based on 'Selection value' with value x (Cluster -number)'''
-def DF_Reduce_Sele(x):
+def DF_Reduce_Select(x):
     df_filtered = df.loc[df['Selection value'] == x]
     return df_filtered
 
@@ -33,11 +33,11 @@ df = pd.read_csv(M_name, sep='\t')
 df_all = pd.read_csv(MA_name, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
-Cat_input = 'KEGG' ### Decide which Category to use
+Cat_input = 'GOMF' ### Decide which Category to use
 df = DF_Reduce_Cat(Cat_input)
 # Reduce DataFrame based on 'Selection value' with Sele_input
-#Select_input = 'Cluster -810' ### Decide which Selection to use '808' or '810'
-#df = DF_Reduce_Sele(Select_input)
+Select_input = 'Cluster -810' ### Decide which Selection to use '808' or '810'
+df = DF_Reduce_Select(Select_input)
 
 # Add a 'Gene Ratio'(Intersection size / Category size) column. !!!First row will be empty (NaN)!!!
 df['Intersection size'] = Tf_float('Intersection size')
@@ -71,23 +71,32 @@ y = DF_list(y_input)
 c = DF_list(c_input)
 s = DF_list(s_input)
 
-# Draw the scatter plot
-fig, ax = plt.subplots(figsize=(3, 3)) ### Decide plot size
+print(x)
+print(y)
+print(c)
+print(s)
+
+# setup plot and draw the scatter plot
+fig, ax = plt.subplots(figsize=(5, 5)) ### Decide plot size
+axes = plt.gca()
+axes.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.2f}'))
+axes.xaxis.set_major_locator(ticker.MultipleLocator(1))
+
 sc = ax.scatter(x, y, s, c, cmap='coolwarm')
 
 # Set plot margins, Title and labels
-ax.margins(0.1, 0.1) ### Decide plot margins
+ax.margins(0.05, 0.05) ### Decide plot margins
 ax.set_xlabel(x_label)
 ax.set_ylabel(y_label)
 ax.set_title(Title)
 
-# To specify the number of ticks on X axis
-ax.xaxis.set_major_locator(ticker.MaxNLocator(5, integer=True))
-ax.invert_xaxis()
+# Set up tick locator on x axis
+#ax.xaxis.set_major_locator(ticker.MaxNLocator(5, integer=True))
+#ax.invert_xaxis()
 #plt.xticks(range(1,3))
 #plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(1))
-#ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
-##ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+#ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.2f}')) 
+#ax.xaxis.set_major_locator(ticker.MultipleLocator(2))
 
 # Add a colorbar
 cbar = fig.colorbar(sc, anchor=(0, 0), shrink=0.4)
@@ -96,7 +105,9 @@ cbar.ax.set_title('FDR', fontdict = {'size':8})
 ''' Set legend_values from the list 's', 
  divide the list into 5 groups, 
  and grab the last 5 groups' first item '''
-legend_values = np.sort(s)[::len(s)//3][-3:]
+# Create a list from 0 to the largest value from the list s
+s_list = np.arange(0, int(max(s)), 1).tolist()
+legend_values = np.sort(s_list)[::len(s_list)//5][-5:]
 #print(legend_values)
 
 # Get the bounds of colorbar axis
@@ -130,7 +141,9 @@ elif s_input == 'Gene ratio':
 sax.yaxis.set_label_position("right")
 sax.yaxis.tick_right()
 sax.set_yticks(y)
-sax.set_yticklabels(np.round_(legend_values / M_size, decimals=2), fontdict = {'size':8})
+legend_values =  np.round_(legend_values / M_size)
+legend_values = legend_values.astype(int)
+sax.set_yticklabels(legend_values, fontdict = {'size':8})
 sax.set_title(sc_title, loc='left', fontdict = {'size':8})
 sax.set_xticks([]) # Set xticks to empty
 sax.tick_params(axis='both', which='both', length=0) # Set ticks length to 0 in order to not show
