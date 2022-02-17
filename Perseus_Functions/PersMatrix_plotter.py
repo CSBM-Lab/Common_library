@@ -1,5 +1,6 @@
 '''Based on Perseus v1.6.15.0
 Using enrichment analysis Matrix to filter out a more specific list
+then draw a dot plot
 '''
 import pandas as pd
 import numpy as np
@@ -105,4 +106,5 @@ if __name__ == '__main__':
     #df_new.loc['Category size'] = Tf_float('Category size')
     #df_new['Gene ratio'] = df_new.loc['Intersection size'] / df_new.loc['Category size']
     '''This df is ready for plot drawing'''
-    df_new.to_csv('df_GOMF_filtered.txt', index=False, sep='\t')
+    ##df_new.to_csv('df_GOMF_filtered.txt', index=False, sep='\t') ### Create a file to check
+    
