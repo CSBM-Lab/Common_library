@@ -27,12 +27,12 @@ df = pd.read_csv(M_file, sep='\t')
 df_all = pd.read_csv(MA_file, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
-Cat_input = 'GOMF' ### Decide which Category to use
+Cat_input = 'GOBP' ### Decide which Category to use
 df = DF_Reduce_Cat(Cat_input)
 
 # Reduce DataFrame based on 'Selection value' with Sele_input
-Sele_input = 'Cluster-810' ### Decide which Selection to use
-df = DF_Reduce_Sele(Sele_input)
+#Sele_input = 'Cluster-810' ### Decide which Selection to use
+#df = DF_Reduce_Sele(Sele_input)
 
 # Add a 'Gene Ratio'(Intersection size / Category size) column. !!!First row will be empty (NaN)!!!
 df['Intersection size'] = Tf_float('Intersection size')
@@ -42,12 +42,12 @@ df['Gene ratio'] = df['Intersection size'][1:] / df['Category size'][1:]
 
 '''Let's compare 'Category value' names back to the original data,
 to filter out more specific targets.'''
-# Reduce df_all to only one column with name Cat_input, excluding first row
-df_all_reduced = df_all[Cat_input][1:]
-df_all_reduced.dropna(inplace=True) # Drop the rows with (NaN)
+## Reduce df_all to only one column with name Cat_input, excluding first row
+#df_all_reduced = df_all[Cat_input][1:]
+#df_all_reduced.dropna(inplace=True) # Drop the rows with (NaN)
 
 ## Create 2 txt files to compare
-df['Category value'].to_csv('df_GOMF.txt', index=False, sep='\t')
+df['Category value'].to_csv('df_GOBP.txt', index=False, sep='\t')
 #df_all_reduced.to_csv('df_all_GOMF.txt', index=False, sep='\t')
 
 '''Read through each row, and compare the last 3 items

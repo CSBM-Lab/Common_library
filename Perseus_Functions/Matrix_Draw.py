@@ -33,7 +33,7 @@ df = pd.read_csv(M_name, sep='\t')
 df_all = pd.read_csv(MA_name, sep='\t')
 
 # Reduce DataFrame based on 'Category column' with Cat_input
-Cat_input = 'GOMF' ### Decide which Category to use
+Cat_input = 'GOMF name' ### Decide which Category to use
 df = DF_Reduce_Cat(Cat_input)
 # Reduce DataFrame based on 'Selection value' with Sele_input
 Select_input = 'Cluster -810' ### Decide which Selection to use '808' or '810'
@@ -62,6 +62,7 @@ y_label = 'Function'
 
 # Transform string into float and modify marker size
 M_size = 1 ### 500 for 'Gene ratio', 1 for 'Intersection size'
+df[x_input] = Tf_float(x_input)
 df[c_input] = Tf_float(c_input)
 df[s_input] = M_size * Tf_float(s_input)
 
@@ -78,9 +79,9 @@ print(s)
 
 # setup plot and draw the scatter plot
 fig, ax = plt.subplots(figsize=(5, 5)) ### Decide plot size
-axes = plt.gca()
-axes.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.2f}'))
-axes.xaxis.set_major_locator(ticker.MultipleLocator(1))
+#axes = plt.gca()
+#axes.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:.2f}'))
+#axes.xaxis.set_major_locator(ticker.MultipleLocator(1))
 
 sc = ax.scatter(x, y, s, c, cmap='coolwarm')
 
@@ -91,6 +92,9 @@ ax.set_ylabel(y_label)
 ax.set_title(Title)
 
 # Set up tick locator on x axis
+#ax.invert_xaxis()
+ax.set_xticks(np.arange(1, 4, 0.5))
+#ax.set_xticklabels(['0', '1', '2', '3', '4'])
 #ax.xaxis.set_major_locator(ticker.MaxNLocator(5, integer=True))
 #ax.invert_xaxis()
 #plt.xticks(range(1,3))
@@ -142,7 +146,7 @@ sax.yaxis.set_label_position("right")
 sax.yaxis.tick_right()
 sax.set_yticks(y)
 legend_values =  np.round_(legend_values / M_size)
-legend_values = legend_values.astype(int)
+legend_values = legend_values.astype(int) ### Convert the array into integer to remove the '.0'
 sax.set_yticklabels(legend_values, fontdict = {'size':8})
 sax.set_title(sc_title, loc='left', fontdict = {'size':8})
 sax.set_xticks([]) # Set xticks to empty
