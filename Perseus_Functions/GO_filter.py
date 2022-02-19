@@ -19,7 +19,7 @@ def GO_obo(GO):
     output = StringIO()  ### print value to variable instead of printing to file or monitor
     term = obo_parser.GODag('go.obo').query_term(GO)
     print(term.parents, file=output)  ### redirect the output to variable
-    print(GO)
+    ##print(GO)
     ##print(term.parents)
     data = output.getvalue()  ### get the result of "term" to data, it will change the type of object to string that we can access it
     levels = []
@@ -32,8 +32,8 @@ def GO_obo(GO):
             if len(info) >= 3:  ### filter out the GO term which has no level information (may be root or no child)
                 levels.append(int(info[1].replace('level-', "")))
                 depths.append(int(info[2].replace('depth-', "")))
-    print(levels)
-    print(depths)
+    ##print(levels)
+    ##print(depths)
     ''' Only keep the rows with depth - levels < 3'''
     if levels == []:
         print('empty')
@@ -46,7 +46,6 @@ def GO_obo(GO):
                 print('>=3')
             else:
                 print('keep row ' + str(Row_num+1))
-        ##print(count)
         if count == 0: # When count is 0, we keep the row from DataFrame
             Row_keep.append(Row_num)
 
@@ -60,5 +59,5 @@ if __name__ == '__main__':
     Run_filter('Category value')
     print(Row_keep) ### print the list Row_keep to check
     df_new = df_GO.iloc[Row_keep,:]
-    print(df_new) ### print the new DataFrame to check
-    ##df_new.to_csv('df_GOMF_filtered.txt', index=False, sep='\t')
+    ##print(df_new) ### print the new DataFrame to check
+    df_new.to_csv('df_GOMF_filtered.txt', index=False, sep='\t')
