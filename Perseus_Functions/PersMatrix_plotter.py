@@ -135,15 +135,15 @@ if __name__ == '__main__':
         print('Rows to drop:', Row_drop) ### print the list Row_drop to check
         df.drop(df.index[Row_drop], inplace=True)
         #df = df.iloc[Row_keep,:]
-
+        
 
         # Replace name with GO term
         for index, GO in enumerate(df['Category value']):
             print(index)
             print(GO)
-            #print(df.loc[index, 'Category value'])
-            #df.loc[index, 'Category value'] = GO_name(GO)
-            #print(df.loc[index, 'Category value'])
+            print(df.loc[index, 'Category value'])
+            df.loc[index, 'Category value'] = GO_name(GO)
+            print(df.loc[index, 'Category value'])
 
     ##print(df) ### print the new DataFrame to check
 
