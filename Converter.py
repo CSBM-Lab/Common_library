@@ -1,24 +1,54 @@
-# Convert the original strand into the complementary strand.
-def complement(s):
-        s = s.replace('A', 't')
-        s = s.replace('T', 'A')
-        s = s.replace('G', 'c')
-        s = s.replace('C', 'G')
-        s = s.replace('t', 'T')
-        s = s.replace('c', 'C')
-        return s
+'''
+Converter tools
+'''
+def main():
+    pass
 
-# Convert the original strand into the RNA transcript.
-def transcription(s):
-        s = s.replace('A', 'U')
-        s = s.replace('T', 'A')
-        s = s.replace('G', 'c')
-        s = s.replace('C', 'G')
-        s = s.replace('c', 'C')
-        return s
 
-# Convert codon into amino acid.
+def complement(seq):
+    """Convert input sequence into it's complementary sequence.
+
+    Args:
+        seq (string): Input sequence.
+
+    Returns:
+        string: The complementary sequence of input.
+    """
+    seq = seq.replace('A', 't')
+    seq = seq.replace('T', 'A')
+    seq = seq.replace('G', 'c')
+    seq = seq.replace('C', 'G')
+    seq = seq.replace('t', 'T')
+    seq = seq.replace('c', 'C')
+    return seq
+
+
+def transcription(seq):
+    """Convert input sequence into RNA transcript.
+
+    Args:
+        seq (string): Input sequence.
+
+    Returns:
+        string: The RNA transcript of input.
+    """
+    seq = seq.replace('A', 'U')
+    seq = seq.replace('T', 'A')
+    seq = seq.replace('G', 'c')
+    seq = seq.replace('C', 'G')
+    seq = seq.replace('c', 'C')
+    return seq
+
+
 def codon_aa(c):
+    """Convert codon into amino acid.
+
+    Args:
+        c (string): Input sequence.
+
+    Returns:
+        string: Amino acid of input sequence.
+    """
     if   c == 'GTT' or c == 'GTC' or c == 'GTA' or c == 'GTG' or c == 'GUU' or (
                    c == 'GUC' or c == 'GUA' or c == 'GUG'):
         c = 'V' # Val
@@ -68,24 +98,26 @@ def codon_aa(c):
         c = 'K' # Lys
     elif c == 'TAA' or c == 'TAG' or c == 'UAA' or (
                     c == 'UAG' or c == 'TGA' or c == 'UGA'):
-        c = '*' # STOP   
+        c = '*' # STOP
+    else:
+        c = 'x' # nonsense
     return c
 
 # Convert coding strand into amino acid with sequence shift.
-def Seq_aa(c):
+def seq_aa(c, seq_shift):
     aa = ''
-    loc1 = 0 + Seq_shift
-    loc2 = 3 + Seq_shift
+    loc1 = 0 + seq_shift
+    loc2 = 3 + seq_shift
     for i in c:
         codon = c[loc1:loc2]
-        aa += Codon_aa(codon)
+        aa += codon_aa(codon)
         loc1 += 3
         loc2 += 3
     return aa
 
 # Convert codon to amino acid, from a list to a new list
 def codon_aa_ls(s):
-    def Codon_aa_l(c):
+    def codon_aa_l(c):
         if   c[i] == 'GTT' or c[i] == 'GTC' or c[i] == 'GTA' or c[i] == 'GTG' or c[i] == 'GUU' or (
                           c[i] == 'GUC' or c[i] == 'GUA' or c[i] == 'GUG'):
             c[i] = 'V' # Val
@@ -136,6 +168,12 @@ def codon_aa_ls(s):
         elif c[i] == 'TAA' or c[i] == 'TAG' or c[i] == 'UAA' or (
                            c[i] == 'UAG' or c[i] == 'TGA' or c[i] == 'UGA'):
             c[i] = '*' # STOP
+        else:
+            c = 'x' # nonsense
     for i in range(len(s)):
-        Codon_aa_l(s)
+        codon_aa_l(s)
     return s
+
+
+if __name__ == '__main__':
+    main()
