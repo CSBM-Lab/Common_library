@@ -14,12 +14,12 @@ def reverse(seq):
     :return: The reverse sequence.
     :rtype: string
     """
-    seq =  seq[::1]
+    seq =  seq[::-1]
     return seq
 
 
 def complement(seq):
-    """Convert input sequence into it's complementary sequence.
+    """Convert the input sequence into it's complementary sequence.
 
     :param seq: Input sequence.
     :type seq: string
@@ -36,22 +36,27 @@ def complement(seq):
 
 
 def transcription(seq):
-    """Convert input sequence into RNA transcript.
+    """Convert the input sequence into RNA transcript.
 
     :param seq: Input sequence.
     :type seq: string
     :return: The RNA transcript.
     :rtype: string
     """
-    seq = seq.replace('A', 'U')
-    seq = seq.replace('T', 'A')
-    seq = seq.replace('G', 'c')
-    seq = seq.replace('C', 'G')
-    seq = seq.replace('c', 'C')
+    seq = seq.replace('T', 'U')
     return seq
 
 
-## reverse_transcription
+def transcription_rev(seq):
+    """Reverse transcribe into DNA sequence.
+
+    :param seq: Input sequence.
+    :type seq: string
+    :return: The DNA sequence.
+    :rtype: string
+    """
+    seq = seq.replace('U', 'T')
+    return seq
 
 
 def codon_aa(c):
@@ -123,25 +128,26 @@ def codon_aa(c):
     return aa
 
 
-# Convert coding strand into amino acid with sequence shift.
 def translation(seq, seq_shift=0):
-    """Convert input sequence into protein sequence.
-    (Please convert DNA sequence to RNA sequence first!)
+    """Convert the input sequence into protein sequence.
+    (Works on both DNA or RNA sequences!)
 
     :param seq: Input sequence.
     :type seq: string
-    :param seq_shift: Frameshift of translation. [0-2] defaults to 0.
+    :param seq_shift: Sequence shift of translation. [0,1,2,-1] defaults to 0.
     :type seq_shift: int, optional
     :return: The protein sequence.
     :rtype: string
     """
-    if seq_shift not in [0,1,2]:
+    if seq_shift not in [0,1,2,-1]:
         print(f"Error of translation seq_shift setting, "
-              f"{seq_shift} was used. (only accept 0, 1, or 2)")
+              f"'{seq_shift}' was used. (only accept 0, 1, 2 or -1)")
         sys.exit()
     count = len(seq) // 3 # codon count.
     if seq_shift != 0:
         count -= 1
+        if seq_shift == -1:
+            seq_shift = 2
     aa = ''
     loc1 = 0 + seq_shift
     loc2 = 3 + seq_shift
@@ -156,69 +162,14 @@ def translation(seq, seq_shift=0):
 
 # Convert codon to amino acid, from a list to a new list.
 def list_codon_aa(codon_list):
-    """_summary_
+    """Convert list of codons to list of amino acids.
 
-    :param codon_list: _description_
-    :type codon_list: _type_
-    :return: _description_
-    :rtype: _type_
+    :param codon_list: Input codons.
+    :type codon_list: list
+    :return: The amino acids.
+    :rtype: list
     """
     list_aa = []
     for codon in codon_list:
         list_aa.append(codon_aa(codon))
     return list_aa
-
-
-def codon_aa_l(c):
-    if   c[i] == 'GTT' or c[i] == 'GTC' or c[i] == 'GTA' or c[i] == 'GTG' or c[i] == 'GUU' or (
-                      c[i] == 'GUC' or c[i] == 'GUA' or c[i] == 'GUG'):
-        c[i] = 'V' # Val
-    elif c[i] == 'GCT' or c[i] == 'GCC' or c[i] == 'GCA' or c[i] == 'GCG' or c[i] == 'GCU':
-        c[i] = 'A' # Ala
-    elif c[i] == 'GAT' or c[i] == 'GAC' or c[i] == 'GAU':
-        c[i] = 'D' # Asp
-    elif c[i] == 'GAA' or c[i] == 'GAG':
-        c[i] = 'E' # Glu
-    elif c[i] == 'GGT' or c[i] == 'GGC' or c[i] == 'GGA' or c[i] == 'GGG' or c[i] == 'GGU':
-        c[i] = 'G' # Gly
-    elif c[i] == 'TTT' or c[i] == 'TTC' or c[i] == 'UUU' or c[i] == 'UUC':
-        c[i] = 'F' # Phe
-    elif c[i] == 'TTA' or c[i] == 'TTG' or c[i] == 'UUA' or c[i] == 'UUG' or c[i] == 'CTT' or (
-                       c[i] == 'CTC' or c[i] == 'CTA' or c[i] == 'CTG' or c[i] == 'CUU' or 
-                       c[i] == 'CUC' or c[i] == 'CUA' or c[i] == 'CUG'):
-        c[i] = 'L' # Leu
-    elif c[i] == 'TCT' or c[i] == 'TCC' or c[i] == 'TCA' or c[i] == 'TCG' or c[i] == 'UCU' or (
-                       c[i] == 'UCC' or c[i] == 'UCA' or c[i] == 'UCG' or c[i] == 'AGT' or 
-                       c[i] == 'AGC' or c[i] == 'AGU'):
-        c[i] = 'S' # Ser
-    elif c[i] == 'TAT' or c[i] == 'TAC' or c[i] == 'UAU' or c[i] == 'UAC':
-        c[i] = 'Y' # Tyr
-    elif c[i] == 'TGT' or c[i] == 'TGC' or c[i] == 'UGU' or c[i] == 'UGC':
-        c[i] = 'C' # Cys
-    elif c[i] == 'TGG' or c[i] == 'UGG':
-        c[i] = 'W' # Trp
-    elif c[i] == 'CCT' or c[i] == 'CCC' or c[i] == 'CCA' or c[i] == 'CCG' or c[i] == 'CCU':
-        c[i] = 'P' # Pro
-    elif c[i] == 'CAT' or c[i] == 'CAC' or c[i] == 'CAU':
-        c[i] = 'H' # His
-    elif c[i] == 'CAA' or c[i] == 'CAG':
-        c[i] = 'Q' # Gln
-    elif c[i] == 'CGT' or c[i] == 'CGC' or c[i] == 'CGA' or c[i] == 'CGG' or (
-                       c[i] == 'CGU' or c[i] == 'AGA' or c[i] == 'AGG'):
-        c[i] = 'R' # Arg
-    elif c[i] == 'ATT' or c[i] == 'ATC' or c[i] == 'ATA' or (
-                       c[i] == 'AUU' or c[i] == 'AUC' or c[i] == 'AUA'):
-        c[i] = 'I' # Ile
-    elif c[i] == 'ATG' or c[i] == 'AUG':
-        c[i] = 'M' # Met (Starting codon)
-    elif c[i] == 'ACT' or c[i] == 'ACC' or c[i] == 'ACA' or c[i] == 'ACG' or c[i] == 'ACU':
-        c[i] = 'T' # Thr
-    elif c[i] == 'AAT' or c[i] == 'AAC' or c[i] == 'AAU':
-        c[i] = 'N' # Asn
-    elif c[i] == 'AAA' or c[i] == 'AAG':
-        c[i] = 'K' # Lys
-    elif c[i] == 'TAA' or c[i] == 'TAG' or c[i] == 'UAA' or (
-                       c[i] == 'UAG' or c[i] == 'TGA' or c[i] == 'UGA'):
-        c[i] = '*' # STOP
-    else:
-        c = 'x' # nonsense

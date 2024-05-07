@@ -9,27 +9,49 @@ Converter.py
 ^^^^^^^^^^^^
 Converter for gene sequence
 
+**reverse**
+::
+    - Description:
+        Reverse the input sequence.
+
+    - Usage:
+        reverse(seq)
+
+    - Arguments:
+        seq     the input sequence. Type: string
+
 **complement**
 ::
     - Description:
-        Convert the original strand into the complementary strand.
+        Convert the input sequence into it's complementary sequence.
 
     - Usage:   
-        complement(strand)
+        complement(seq)
 
     - Arguments:    
-        strand    the original strand. Type: string
+        seq    the input sequence. Type: string
 
 **transcription**
 ::
     - Description:
-        Convert the original strand into the RNA transcript.
+        Convert the input sequence into RNA transcript.
 
     - Usage:
-        transcription(strand)
+        transcription(seq)
 
     - Arguments:
-        strand    the original strand. Type: string
+        seq    the input sequence. Type: string
+
+**transcription_rev**
+::
+    - Description:
+        Reverse transcribe into DNA sequence.
+
+    - Usage:
+        transcription(seq)
+
+    - Arguments:
+        seq    the input sequence. Type: string
 
 **codon_aa**
 ::
@@ -40,31 +62,30 @@ Converter for gene sequence
         codon_aa(codon)
     
     - Arguments:
-        codon    the coding strand, can be either DNA or RNA. Type: string
+        codon    a single codon, can be either DNA or RNA. Type: string
 
-**Seq_aa**
+**translation**
 ::
     - Description:
-        Convert coding strand into amino acid with sequence shift.
+        Convert the input sequence into protein sequence.
 
     - Usage:
-        Seq_shift = 0
-        Seq_aa(codon)
+        translation(seq, seq_shift)
 
     - Arguments:
-        Seq_shift    the number of phase or sequence shift. Type: interger
-        codon    the coding strand, can be either DNA or RNA. Type: string
+        seq    the input sequence, can be either DNA or RNA. Type: string
+        seq_shift    the number of phase or sequence shift. [0,1,2,-1] defaults to 0. Type: interger
     
-**codon_aa_ls**
+**list_codon_aa**
 ::
     - Description:
-        Convert codon into amino acid. (list type)
+        Convert list of codons to list of amino acids.
     
     - Usage:
-        codon_aa_ls(strand)
+        list_codon_aa(codon_list)
 
     - Arguments:
-        strand    the coding strand, can be either DNA or RNA. Type: list
+        codon_list    the input codons, can be either DNA or RNA. Type: list
 
 
 **Author(s)**
