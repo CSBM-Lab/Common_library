@@ -11,6 +11,7 @@ Converter for gene sequence
 
 **reverse**
 ::
+
     - Description:
         Reverse the input sequence.
 
@@ -22,6 +23,7 @@ Converter for gene sequence
 
 **complement**
 ::
+
     - Description:
         Convert the input sequence into it's complementary sequence.
 
@@ -33,6 +35,7 @@ Converter for gene sequence
 
 **transcription**
 ::
+
     - Description:
         Convert the input sequence into RNA transcript.
 
@@ -44,6 +47,7 @@ Converter for gene sequence
 
 **transcription_rev**
 ::
+
     - Description:
         Reverse transcribe into DNA sequence.
 
@@ -55,6 +59,7 @@ Converter for gene sequence
 
 **codon_aa**
 ::
+
     - Description:
         Convert codon into amino acid.
     
@@ -66,6 +71,7 @@ Converter for gene sequence
 
 **translation**
 ::
+
     - Description:
         Convert the input sequence into protein sequence.
 
@@ -78,6 +84,7 @@ Converter for gene sequence
     
 **list_codon_aa**
 ::
+
     - Description:
         Convert list of codons to list of amino acids.
     
