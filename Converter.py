@@ -73,55 +73,47 @@ def codon_aa(c):
               f"The input was '{c}', "
               f"will be marked as 'x' in the output.")
         # sys.exit()
-    if   c == 'GTT' or c == 'GTC' or c == 'GTA' or c == 'GTG' or c == 'GUU' or (
-                   c == 'GUC' or c == 'GUA' or c == 'GUG'):
+    if c in ['GTT', 'GTC', 'GTA', 'GTG', 'GUU', 'GUC', 'GUA', 'GUG']:
         aa = 'V' # Val
-    elif c == 'GCT' or c == 'GCC' or c == 'GCA' or c == 'GCG' or c == 'GCU':
+    elif c in ['GCT', 'GCC', 'GCA', 'GCG', 'GCU']:
         aa = 'A' # Ala
-    elif c == 'GAT' or c == 'GAC' or c == 'GAU':
+    elif c in ['GAT', 'GAC', 'GAU']:
         aa = 'D' # Asp
-    elif c == 'GAA' or c == 'GAG':
+    elif c in ['GAA', 'GAG']:
         aa = 'E' # Glu
-    elif c == 'GGT' or c == 'GGC' or c == 'GGA' or c == 'GGG' or c == 'GGU':
+    elif c in ['GGT', 'GGC', 'GGA', 'GGG', 'GGU']:
         aa = 'G' # Gly
-    elif c == 'TTT' or c == 'TTC' or c == 'UUU' or c == 'UUC':
+    elif c in ['TTT', 'TTC', 'UUU', 'UUC']:
         aa = 'F' # Phe
-    elif c == 'TTA' or c == 'TTG' or c == 'UUA' or c == 'UUG' or c == 'CTT' or (
-                    c == 'CTC' or c == 'CTA' or c == 'CTG' or c == 'CUU' or 
-                    c == 'CUC' or c == 'CUA' or c == 'CUG'):
+    elif c in ['TTA', 'TTG', 'UUA', 'UUG', 'CTT', 'CTC', 'CTA', 'CTG', 'CUU', 'CUC', 'CUA', 'CUG']:
         aa = 'L' # Leu
-    elif c == 'TCT' or c == 'TCC' or c == 'TCA' or c == 'TCG' or c == 'UCU' or (
-                    c == 'UCC' or c == 'UCA' or c == 'UCG' or c == 'AGT' or 
-                    c == 'AGC' or c == 'AGU'):
+    elif c in ['TCT', 'TCC', 'TCA', 'TCG', 'UCU', 'UCC', 'UCA', 'UCG', 'AGT', 'AGC', 'AGU']:
         aa = 'S' # Ser
-    elif c == 'TAT' or c == 'TAC' or c == 'UAU' or c == 'UAC':
+    elif c in ['TAT', 'TAC', 'UAU', 'UAC']:
         aa = 'Y' # Tyr
-    elif c == 'TGT' or c == 'TGC' or c == 'UGU' or c == 'UGC':
+    elif c in ['TGT', 'TGC', 'UGU', 'UGC']:
         aa = 'C' # Cys
-    elif c == 'TGG' or c == 'UGG':
+    elif c in ['TGG', 'UGG']:
         aa = 'W' # Trp
-    elif c == 'CCT' or c == 'CCC' or c == 'CCA' or c == 'CCG' or c == 'CCU':
+    elif c in ['CCT', 'CCC', 'CCA', 'CCG', 'CCU']:
         aa = 'P' # Pro
-    elif c == 'CAT' or c == 'CAC' or c == 'CAU':
+    elif c in ['CAT', 'CAC', 'CAU']:
         aa = 'H' # His
-    elif c == 'CAA' or c == 'CAG':
+    elif c in ['CAA', 'CAG']:
         aa = 'Q' # Gln
-    elif c == 'CGT' or c == 'CGC' or c == 'CGA' or c == 'CGG' or (
-                    c == 'CGU' or c == 'AGA' or c == 'AGG'):
+    elif c in ['CGT', 'CGC', 'CGA', 'CGG', 'CGU', 'AGA', 'AGG']:
         aa = 'R' # Arg
-    elif c == 'ATT' or c == 'ATC' or c == 'ATA' or (
-                    c == 'AUU' or c == 'AUC' or c == 'AUA'):
+    elif c in ['ATT', 'ATC', 'ATA', 'AUU', 'AUC', 'AUA']:
         aa = 'I' # Ile
-    elif c == 'ATG' or c == 'AUG':
+    elif c in ['ATG', 'AUG']:
         aa = 'M' # Met (Starting codon)
-    elif c == 'ACT' or c == 'ACC' or c == 'ACA' or c == 'ACG' or c == 'ACU':
+    elif c in ['ACT', 'ACC', 'ACA', 'ACG', 'ACU']:
         aa = 'T' # Thr
-    elif c == 'AAT' or c == 'AAC' or c == 'AAU':
+    elif c in ['AAT', 'AAC', 'AAU']:
         aa = 'N' # Asn
-    elif c == 'AAA' or c == 'AAG':
+    elif c in ['AAA', 'AAG']:
         aa = 'K' # Lys
-    elif c == 'TAA' or c == 'TAG' or c == 'UAA' or (
-                    c == 'UAG' or c == 'TGA' or c == 'UGA'):
+    elif c in ['TAA', 'TAG', 'UAA', 'UAG', 'TGA', 'UGA']:
         aa = '*' # STOP
     else:
         aa = 'x' # nonsense

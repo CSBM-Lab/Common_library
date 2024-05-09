@@ -22,14 +22,14 @@ codon_list_dna = ['TTT', 'TTC', 'TTA', 'TTG', 'CTT', 'CTC', 'CTA', 'CTG',
                   'AGT', 'AGC', 'AGA', 'AGG', 'GGT', 'GGC', 'GGA', 'GGG']
 print(f'{"list of DNA codons:" : <20} {codon_list_dna}')
 
-codon_list_rna = ['UUU', 'TTC', 'TTA', 'TTG', 'CTT', 'CTC', 'CTA', 'CTG',
-                  'ATT', 'ATC', 'ATA', 'ATG', 'GTT', 'GTC', 'GTA', 'GTG',
-                  'TCT', 'TCC', 'TCA', 'TCG', 'CCT', 'CCC', 'CCA', 'CCG',
-                  'ACT', 'ACC', 'ACA', 'ACG', 'GCT', 'GCC', 'GCA', 'GCG',
-                  'TAT', 'TAC', 'TAA', 'TAG', 'CAT', 'CAC', 'CAA', 'CAG',
-                  'AAT', 'AAC', 'AAA', 'AAG', 'GAT', 'GAC', 'GAA', 'GAG',
-                  'TGT', 'TGC', 'TGA', 'TGG', 'CGT', 'CGC', 'CGA', 'CGG',
-                  'AGT', 'AGC', 'AGA', 'AGG', 'GGT', 'GGC', 'GGA', 'GGG']
+codon_list_rna = ['UUU', 'UUC', 'UUA', 'UUG', 'CUU', 'CUC', 'CUA', 'CUG',
+                  'AUU', 'AUC', 'AUA', 'AUG', 'GUU', 'GUC', 'GUA', 'GUG',
+                  'UCU', 'UCC', 'UCA', 'UCG', 'CCU', 'CCC', 'CCA', 'CCG',
+                  'ACU', 'ACC', 'ACA', 'ACG', 'GCU', 'GCC', 'GCA', 'GCG',
+                  'UAU', 'UAC', 'UAA', 'UAG', 'CAU', 'CAC', 'CAA', 'CAG',
+                  'AAU', 'AAC', 'AAA', 'AAG', 'GAU', 'GAC', 'GAA', 'GAG',
+                  'UGU', 'UGC', 'UGA', 'UGG', 'CGU', 'CGC', 'CGA', 'CGG',
+                  'AGU', 'AGC', 'AGA', 'AGG', 'GGU', 'GGC', 'GGA', 'GGG']
 print(f'{"list of RNA codons:" : <20} {codon_list_rna}')
 
 translation_ref = 'FFLLLLLLIIIMVVVV' + \
@@ -44,27 +44,47 @@ print(f'{"Protein reference:" : <20} {translation_ref}')
 result = reverse(codon_all)
 print(f'{"Reverse sequence:" : <20} {result}')
 
-# 2. Complement
+# 2. Complement.
 result = complement(codon_all)
 print(f'{"Complement sequence:" : <20} {result}')
 
-# 3. Transcription
+# 3. Transcription.
 rna = transcription(codon_all)
 print(f'{"Transcription:" : <20} {rna}')
+print(f'{"Transcription check:" : <20} UUUUUCUUAUUGCUUCUCCUACUGAUUAUCAUAAUGGUUGUCGUAGUGUCUUCCUCAUCGCCUCCCCCACCGACUACCACAACGGCUGCCGCAGCGUAUUACUAAUAGCAUCACCAACAGAAUAACAAAAAGGAUGACGAAGAGUGUUGCUGAUGGCGUCGCCGACGGAGUAGCAGAAGGGGUGGCGGAGGG')
+# if rna == 'UUUUUCUUAUUGCUUCUCCUACUGAUUAUCAUAAUGGUUGUCGUAGUGUCUUCCUCAUCGCCUCCCCCACCGACUACCACAACGGCUGCCGCAGCGUAUUACUAAUAGCAUCACCAACAGAAUAACAAAAAGGAUGACGAAGAGUGUUGCUGAUGGCGUCGCCGACGGAGUAGCAGAAGGGGUGGCGGAGGG':
+#     print(f'Correct!!')
+# else:
+#     print(f'WRONG!!!')
 
-# 4. Reverse transcription
+# 4. Reverse transcription.
 dna = transcription_rev(rna)
 print(f'{"Reverse transcribed:" : <20} {dna}')
+print(f'{"Reverse check:" : <20} TTTTTCTTATTGCTTCTCCTACTGATTATCATAATGGTTGTCGTAGTGTCTTCCTCATCGCCTCCCCCACCGACTACCACAACGGCTGCCGCAGCGTATTACTAATAGCATCACCAACAGAATAACAAAAAGGATGACGAAGAGTGTTGCTGATGGCGTCGCCGACGGAGTAGCAGAAGGGGTGGCGGAGGG')
+# if dna == 'TTTTTCTTATTGCTTCTCCTACTGATTATCATAATGGTTGTCGTAGTGTCTTCCTCATCGCCTCCCCCACCGACTACCACAACGGCTGCCGCAGCGTATTACTAATAGCATCACCAACAGAATAACAAAAAGGATGACGAAGAGTGTTGCTGATGGCGTCGCCGACGGAGTAGCAGAAGGGGTGGCGGAGGG':
+#     print(f'Correct!!')
+# else:
+#     print(f'WRONG!!!')
 
-# 5. Translation
+# 5. Translation.
 # Note: Works on both DNA and RNA sequences.
 protein_dna = translation(dna)
 protein = translation(rna)
 print(f'{"Protein reference:" : <20} {translation_ref}')
 print(f'{"Translation RNA:" : <20} {protein}')
 print(f'{"Translation DNA:" : <20} {protein_dna}')
+print(f'{"Translation check:" : <20} FFLLLLLLIIIMVVVVSSSSPPPPTTTTAAAAYY..HHQQNNKKDDEECC.WRRRRSSRRGGGG')
+# if protein == 'FFLLLLLLIIIMVVVVSSSSPPPPTTTTAAAAYY**HHQQNNKKDDEECC*WRRRRSSRRGGGG':
+#     print(f'Correct!!')
+# else:
+#     print(f'WRONG!!!')
+# if protein_dna == 'FFLLLLLLIIIMVVVVSSSSPPPPTTTTAAAAYY**HHQQNNKKDDEECC*WRRRRSSRRGGGG':
+#     print(f'Correct!!')
+# else:
+#     print(f'WRONG!!!')
 
 # 6. Translation from list of codons.
+# Note: Works on both DNA and RNA codons.
 aa_list_dna = list_codon_aa(codon_list_dna)
 aa_list_rna = list_codon_aa(codon_list_rna)
 aa_string_dna = ''.join(aa_list_dna)
