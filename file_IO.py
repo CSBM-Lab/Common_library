@@ -10,7 +10,7 @@ from utilities import create_folder, text_color, read_df
 # (Optional) Project name.
 project_name = "006_aging_mice"
 # (Required) Path to input file.
-file_path = "C:/Repositories/Common_library/data/mmc2.xlsx"
+file_path = "D:/Repositories/Common_library/data/mmc2.xlsx"
 # (Optional) Sheet name for excel files, defaults to None.
 sheet_name = "STable1"
 # (Optional)(For input file) Character or regex pattern to treat as the delimiter, defaults to '\t'.
@@ -25,7 +25,7 @@ usecols = None
 skiprows = 1
 
 # (Required) Path to output folder.
-out_folder_path = "C:/Repositories/Common_library/data"
+out_folder_path = "D:/Repositories/Common_library/data"
 # (Required) Output file name.
 out_file_name = "proteome_aging_mice.txt"
 # (Required)(For output file) Character or regex pattern to treat as the delimiter, defaults to '\t'.
